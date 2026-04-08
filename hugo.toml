@@ -1,17 +1,18 @@
 baseURL = "https://elearningfrcpath.in/"
 languageCode = "en-us"
-title = "FRCPath & NEET SS Pathology"
+title = "FRCPath & NEET-SS Pathology Exam Preparation | ElearningFRCPath"
 theme = "PaperMod"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
-description = "Daily updates, courses and resources for FRCPath and NEET SS Pathology preparation"
+description = "India's most comprehensive online preparation platform for FRCPath Part 1, NEET-SS Pathology, and INI-SS. Expert faculty, 5000+ MCQs, WHO 5th Edition updated content."
 author = "ElearningFRCPath"
 showReadingTime = true
 showShareButtons = true
-
-[params.homeInfoParams]
-Title = "FRCPath & NEET SS Pathology"
-Content = "Your gateway to pathology excellence"
+keywords = ["FRCPath preparation", "NEET-SS pathology", "pathology MCQ", "histopathology course", "INI-SS pathology", "FRCPath Part 1", "pathology exam preparation"]
+images = ["/images/og-cover.png"]
 
 [[params.socialIcons]]
 name = "email"

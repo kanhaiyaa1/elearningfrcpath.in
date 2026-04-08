@@ -1,0 +1,843 @@
+{{- define "main" }}
+
+<style>
+/* ─── Reset & Base ──────────────────────────────────────────────── */
+.lp-wrap * { box-sizing: border-box; }
+.lp-wrap {
+  --blue:  #1a365d;
+  --blue2: #2b4c7e;
+  --teal:  #319795;
+  --teal2: #2c7a7b;
+  --light: #f0f7f7;
+  --gray:  #f7f8fa;
+  --text:  #2d3748;
+  --muted: #718096;
+  --white: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  color: var(--text);
+  overflow-x: hidden;
+}
+.lp-wrap a { text-decoration: none; }
+.lp-section { padding: 72px 20px; }
+.lp-container { max-width: 1100px; margin: 0 auto; }
+.lp-section-label {
+  display: inline-block;
+  background: var(--light);
+  color: var(--teal2);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 14px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+.lp-section-title {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: var(--blue);
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+.lp-section-sub {
+  font-size: 1.05rem;
+  color: var(--muted);
+  max-width: 640px;
+  margin: 0 auto 48px;
+  line-height: 1.7;
+}
+.lp-center { text-align: center; }
+
+/* ─── HERO ──────────────────────────────────────────────────────── */
+.lp-hero {
+  background: linear-gradient(135deg, #0f2140 0%, #1a365d 45%, #1e5f74 75%, #319795 100%);
+  padding: 90px 20px 80px;
+  position: relative;
+  overflow: hidden;
+}
+.lp-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.lp-hero-inner {
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+.lp-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(49,151,149,0.25);
+  border: 1px solid rgba(49,151,149,0.5);
+  color: #81e6d9;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 24px;
+}
+.lp-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1.15;
+  margin: 0 0 20px;
+  letter-spacing: -0.02em;
+}
+.lp-hero h1 span { color: #81e6d9; }
+.lp-hero-sub {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: rgba(255,255,255,0.82);
+  line-height: 1.75;
+  margin: 0 0 36px;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.lp-hero-sub strong { color: #fff; }
+.lp-hero-ctas {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+.lp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.lp-btn:hover { transform: translateY(-2px); }
+.lp-btn-primary {
+  background: var(--teal);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(49,151,149,0.45);
+}
+.lp-btn-primary:hover { background: var(--teal2); box-shadow: 0 8px 28px rgba(49,151,149,0.5); }
+.lp-btn-secondary {
+  background: rgba(255,255,255,0.12);
+  color: #fff;
+  border: 2px solid rgba(255,255,255,0.35);
+  backdrop-filter: blur(4px);
+}
+.lp-btn-secondary:hover { background: rgba(255,255,255,0.2); }
+.lp-hero-trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.lp-hero-trust-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.88rem;
+}
+.lp-hero-trust-item span:first-child { font-size: 1.1rem; }
+
+/* ─── STATS ─────────────────────────────────────────────────────── */
+.lp-stats { background: var(--white); padding: 56px 20px; }
+.lp-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.lp-stat-card {
+  text-align: center;
+  padding: 32px 20px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  background: var(--gray);
+  transition: box-shadow 0.2s;
+}
+.lp-stat-card:hover { box-shadow: 0 4px 20px rgba(26,54,93,0.1); }
+.lp-stat-num {
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: var(--blue);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.lp-stat-num span { color: var(--teal); }
+.lp-stat-label {
+  font-size: 0.92rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* ─── WHY CHOOSE US ─────────────────────────────────────────────── */
+.lp-why { background: var(--gray); }
+.lp-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.lp-feature-card {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 28px 24px;
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.lp-feature-card:hover { box-shadow: 0 8px 28px rgba(26,54,93,0.1); transform: translateY(-3px); }
+.lp-feature-icon {
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+  display: block;
+}
+.lp-feature-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--blue);
+  margin: 0 0 8px;
+}
+.lp-feature-desc {
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ─── EXAM COMPARISON ───────────────────────────────────────────── */
+.lp-exams { background: var(--white); }
+.lp-table-wrap { overflow-x: auto; }
+.lp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+  min-width: 600px;
+}
+.lp-table th {
+  background: var(--blue);
+  color: #fff;
+  padding: 14px 18px;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+.lp-table th:first-child { border-radius: 8px 0 0 0; }
+.lp-table th:last-child  { border-radius: 0 8px 0 0; }
+.lp-table th.lp-col-teal { background: var(--teal); }
+.lp-table td {
+  padding: 12px 18px;
+  border-bottom: 1px solid #e2e8f0;
+  color: var(--text);
+  vertical-align: top;
+}
+.lp-table tr:nth-child(even) td { background: var(--gray); }
+.lp-table tr:last-child td { border-bottom: none; }
+.lp-table .lp-row-label { font-weight: 600; color: var(--blue); }
+.lp-overlap-badge {
+  display: inline-block;
+  background: #e6fffa;
+  color: var(--teal2);
+  border: 1px solid #b2f5ea;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  margin-top: 4px;
+}
+
+/* ─── COURSES ───────────────────────────────────────────────────── */
+.lp-courses { background: var(--gray); }
+.lp-courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.lp-course-card {
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+.lp-course-card:hover { box-shadow: 0 8px 28px rgba(26,54,93,0.12); transform: translateY(-3px); }
+.lp-course-header {
+  padding: 24px 22px 16px;
+  border-bottom: 1px solid #f0f4f8;
+}
+.lp-course-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+.lp-course-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.lp-badge-core    { background: #ebf8ff; color: #2b6cb0; }
+.lp-badge-advanced { background: #fef3c7; color: #92400e; }
+.lp-badge-hot     { background: #fff0f0; color: #c53030; }
+.lp-badge-practice { background: #f0fff4; color: #276749; }
+.lp-course-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--blue);
+  margin: 0 0 6px;
+}
+.lp-course-body {
+  padding: 14px 22px 20px;
+  flex: 1;
+}
+.lp-course-desc {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0 0 14px;
+}
+.lp-course-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.lp-tag {
+  font-size: 0.75rem;
+  background: var(--light);
+  color: var(--teal2);
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+/* ─── TESTIMONIALS ──────────────────────────────────────────────── */
+.lp-testi { background: var(--blue); }
+.lp-testi .lp-section-label { background: rgba(49,151,149,0.2); color: #81e6d9; }
+.lp-testi .lp-section-title { color: var(--white); }
+.lp-testi .lp-section-sub   { color: rgba(255,255,255,0.65); }
+.lp-testi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+.lp-testi-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 14px;
+  padding: 28px 24px;
+  backdrop-filter: blur(4px);
+}
+.lp-testi-quote { font-size: 2rem; color: var(--teal); line-height: 1; margin-bottom: 12px; }
+.lp-testi-text {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.88);
+  line-height: 1.7;
+  margin: 0 0 20px;
+  font-style: italic;
+}
+.lp-testi-author { display: flex; align-items: center; gap: 12px; }
+.lp-testi-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--teal);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  flex-shrink: 0;
+}
+.lp-testi-name { font-weight: 700; color: var(--white); font-size: 0.95rem; margin-bottom: 2px; }
+.lp-testi-meta { font-size: 0.8rem; color: rgba(255,255,255,0.55); }
+.lp-testi-result {
+  margin-top: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #81e6d9;
+}
+
+/* ─── FAQ ───────────────────────────────────────────────────────── */
+.lp-faq { background: var(--white); }
+.lp-faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 16px;
+}
+@media (max-width: 600px) {
+  .lp-faq-grid { grid-template-columns: 1fr; }
+}
+.lp-faq-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.lp-faq-item summary {
+  padding: 16px 20px;
+  font-weight: 600;
+  color: var(--blue);
+  font-size: 0.96rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--gray);
+  user-select: none;
+}
+.lp-faq-item summary::-webkit-details-marker { display: none; }
+.lp-faq-chevron { font-size: 0.85rem; color: var(--teal); flex-shrink: 0; transition: transform 0.2s; }
+.lp-faq-item[open] .lp-faq-chevron { transform: rotate(180deg); }
+.lp-faq-item[open] summary { background: #ebf8ff; }
+.lp-faq-body {
+  padding: 16px 20px;
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.7;
+  border-top: 1px solid #e2e8f0;
+  background: var(--white);
+}
+
+/* ─── FINAL CTA ─────────────────────────────────────────────────── */
+.lp-cta {
+  background: linear-gradient(135deg, var(--teal2) 0%, var(--teal) 50%, #38b2ac 100%);
+  padding: 80px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.lp-cta::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.lp-cta-inner { position: relative; max-width: 680px; margin: 0 auto; }
+.lp-cta-urgency {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.3);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.lp-cta h2 {
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 900;
+  color: #fff;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+.lp-cta p {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.65;
+  margin: 0 0 32px;
+}
+.lp-btn-white {
+  background: #fff;
+  color: var(--teal2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  font-size: 1.05rem;
+}
+.lp-btn-white:hover { background: #f0fff4; transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+.lp-cta-note {
+  margin-top: 18px;
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.65);
+}
+
+/* ─── Dark mode ─────────────────────────────────────────────────── */
+.dark .lp-stat-card,
+.dark .lp-feature-card,
+.dark .lp-course-card,
+.dark .lp-faq-body {
+  background: #1e293b;
+  border-color: #334155;
+}
+.dark .lp-stats,
+.dark .lp-exams,
+.dark .lp-faq { background: #0f172a; }
+.dark .lp-why,
+.dark .lp-courses { background: #1e293b; }
+.dark .lp-stat-num,
+.dark .lp-feature-title,
+.dark .lp-course-name,
+.dark .lp-table .lp-row-label { color: #93c5fd; }
+.dark .lp-section-title { color: #e2e8f0; }
+.dark .lp-faq-item summary { background: #1e293b; color: #93c5fd; }
+.dark .lp-faq-item[open] summary { background: #172554; }
+.dark .lp-table td { color: #cbd5e1; }
+.dark .lp-table tr:nth-child(even) td { background: #1e293b; }
+.dark .lp-tag { background: #1e3a4a; color: #67e8f9; }
+
+@media (max-width: 640px) {
+  .lp-section { padding: 52px 16px; }
+  .lp-hero { padding: 64px 16px 56px; }
+  .lp-stats { padding: 40px 16px; }
+  .lp-btn { padding: 12px 22px; font-size: 0.93rem; }
+}
+</style>
+
+<div class="lp-wrap">
+
+  <!-- ═══════════════════════════════════════════════════ HERO -->
+  <section class="lp-hero">
+    <div class="lp-hero-inner">
+      <div class="lp-hero-badge">
+        🧬 WHO 5th Edition Updated &nbsp;·&nbsp; 2024–25
+      </div>
+      <h1>
+        Crack <span>FRCPath, NEET-SS</span> &amp; INI-SS<br>
+        with One Smart Preparation
+      </h1>
+      <p class="lp-hero-sub">
+        The three exams share <strong>90%+ syllabus overlap</strong>. Stop preparing separately.
+        Our expert-led platform gives pathology residents everything they need — structured notes,
+        5000+ MCQs, video lectures, and WHO 5th Edition updates — all in one place.
+      </p>
+      <div class="lp-hero-ctas">
+        <a href="/courses/" class="lp-btn lp-btn-primary">🚀 Start Learning</a>
+        <a href="/courses/" class="lp-btn lp-btn-secondary">📚 View Courses</a>
+      </div>
+      <div class="lp-hero-trust">
+        <div class="lp-hero-trust-item"><span>✅</span> <span>No-risk 7-day trial</span></div>
+        <div class="lp-hero-trust-item"><span>🎓</span> <span>Expert faculty</span></div>
+        <div class="lp-hero-trust-item"><span>📱</span> <span>Learn on any device</span></div>
+        <div class="lp-hero-trust-item"><span>🔄</span> <span>Lifetime updates</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ STATS -->
+  <section class="lp-stats">
+    <div class="lp-stats-grid">
+      <div class="lp-stat-card">
+        <div class="lp-stat-num">1200<span>+</span></div>
+        <div class="lp-stat-label">Students Helped</div>
+      </div>
+      <div class="lp-stat-card">
+        <div class="lp-stat-num">92<span>%</span></div>
+        <div class="lp-stat-label">Pass Rate (FRCPath Part 1)</div>
+      </div>
+      <div class="lp-stat-card">
+        <div class="lp-stat-num">5000<span>+</span></div>
+        <div class="lp-stat-label">MCQs Available</div>
+      </div>
+      <div class="lp-stat-card">
+        <div class="lp-stat-num">8</div>
+        <div class="lp-stat-label">Expert Faculty Members</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ WHY CHOOSE US -->
+  <section class="lp-section lp-why">
+    <div class="lp-container">
+      <div class="lp-center">
+        <span class="lp-section-label">Why Choose Us</span>
+        <h2 class="lp-section-title">Everything You Need to Pass — In One Platform</h2>
+        <p class="lp-section-sub">Built specifically for pathology trainees preparing for FRCPath, NEET-SS, and INI-SS. No generic content — only what moves the needle.</p>
+      </div>
+      <div class="lp-features-grid">
+        <div class="lp-feature-card">
+          <span class="lp-feature-icon">🩺</span>
+          <h3 class="lp-feature-title">Expert Faculty</h3>
+          <p class="lp-feature-desc">Learn from pathologists who have cleared FRCPath and NEET-SS themselves. Real exam insight, not textbook teaching.</p>
+        </div>
+        <div class="lp-feature-card">
+          <span class="lp-feature-icon">📝</span>
+          <h3 class="lp-feature-title">Comprehensive Notes</h3>
+          <p class="lp-feature-desc">Concise, high-yield study notes covering General Pathology, Systemic Pathology, Haematopathology, and Molecular Pathology — ready to download.</p>
+        </div>
+        <div class="lp-feature-card">
+          <span class="lp-feature-icon">🧪</span>
+          <h3 class="lp-feature-title">Mock Tests &amp; MCQs</h3>
+          <p class="lp-feature-desc">5000+ exam-pattern MCQs with detailed explanations. Full-length mock tests timed to simulate the actual FRCPath and NEET-SS exam experience.</p>
+        </div>
+        <div class="lp-feature-card">
+          <span class="lp-feature-icon">🔬</span>
+          <h3 class="lp-feature-title">WHO 5th Edition Updates</h3>
+          <p class="lp-feature-desc">Stay current with the latest WHO classification changes — tumour classifications, new entities, and revised diagnostic criteria updated regularly.</p>
+        </div>
+        <div class="lp-feature-card">
+          <span class="lp-feature-icon">🎥</span>
+          <h3 class="lp-feature-title">Video Lectures</h3>
+          <p class="lp-feature-desc">On-demand video lectures for every major topic. Watch at your own pace, pause, rewind, and revisit — available 24/7 on all devices.</p>
+        </div>
+        <div class="lp-feature-card">
+          <span class="lp-feature-icon">💬</span>
+          <h3 class="lp-feature-title">Community &amp; Doubt Support</h3>
+          <p class="lp-feature-desc">Join a community of serious pathology aspirants. Get your doubts resolved by faculty during live sessions and dedicated doubt-clearing forums.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ EXAM COMPARISON -->
+  <section class="lp-section lp-exams">
+    <div class="lp-container">
+      <div class="lp-center">
+        <span class="lp-section-label">Exam Overview</span>
+        <h2 class="lp-section-title">FRCPath vs NEET-SS vs INI-SS — Know Your Exam</h2>
+        <p class="lp-section-sub">Three exams, one preparation. Here's how they compare — and why our platform covers all three efficiently.</p>
+      </div>
+      <div class="lp-table-wrap">
+        <table class="lp-table">
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>FRCPath Part 1</th>
+              <th class="lp-col-teal">NEET-SS Pathology</th>
+              <th>INI-SS Pathology</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="lp-row-label">Conducted By</td>
+              <td>Royal College of Pathologists, UK</td>
+              <td>National Board of Examinations (NBE)</td>
+              <td>AIIMS / PGIMER / JIPMER / NIMHANS</td>
+            </tr>
+            <tr>
+              <td class="lp-row-label">Eligibility</td>
+              <td>MBBChB / MBBS; enrolled in ST1–ST3 UK training</td>
+              <td>MD Pathology or equivalent recognized degree</td>
+              <td>MD Pathology; eligible for DM/MCh equivalents</td>
+            </tr>
+            <tr>
+              <td class="lp-row-label">Exam Pattern</td>
+              <td>MCQ (Best of 5) — 2 papers × 100 Qs</td>
+              <td>MCQ — 200 questions, 3.5 hours</td>
+              <td>MCQ — 100 questions, 90 minutes</td>
+            </tr>
+            <tr>
+              <td class="lp-row-label">Key Subjects</td>
+              <td>General Path, Systemic Path, Haematology, Molecular</td>
+              <td>General Path, Systemic Path, Haematology, Cytology</td>
+              <td>General Path, Systemic Path, Molecular, Oncopathology</td>
+            </tr>
+            <tr>
+              <td class="lp-row-label">Exam Frequency</td>
+              <td>Twice yearly (Jan &amp; Jul)</td>
+              <td>Once yearly (Aug–Sep)</td>
+              <td>Once yearly (Nov–Dec)</td>
+            </tr>
+            <tr>
+              <td class="lp-row-label">Fees (approx.)</td>
+              <td>£570 (UK trainees)</td>
+              <td>₹4,500</td>
+              <td>₹3,000–₹4,000</td>
+            </tr>
+            <tr>
+              <td class="lp-row-label">Syllabus Overlap</td>
+              <td><span class="lp-overlap-badge">✔ ~90% with NEET-SS</span></td>
+              <td><span class="lp-overlap-badge">✔ ~90% with FRCPath</span></td>
+              <td><span class="lp-overlap-badge">✔ ~85% with NEET-SS</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ COURSES -->
+  <section class="lp-section lp-courses">
+    <div class="lp-container">
+      <div class="lp-center">
+        <span class="lp-section-label">Course Highlights</span>
+        <h2 class="lp-section-title">Structured Courses That Cover Every Corner of the Syllabus</h2>
+        <p class="lp-section-sub">Each course is built around real exam patterns. No fluff — only what actually appears in FRCPath, NEET-SS, and INI-SS papers.</p>
+      </div>
+      <div class="lp-courses-grid">
+        <div class="lp-course-card">
+          <div class="lp-course-header">
+            <span class="lp-course-icon">🔬</span>
+            <span class="lp-course-badge lp-badge-core">Core Module</span>
+            <h3 class="lp-course-name">General Pathology</h3>
+          </div>
+          <div class="lp-course-body">
+            <p class="lp-course-desc">Cell injury, inflammation, repair, neoplasia, immunopathology, and genetics. The foundation for every paper — mastered here, applied everywhere.</p>
+            <div class="lp-course-tags">
+              <span class="lp-tag">Cell Injury</span>
+              <span class="lp-tag">Inflammation</span>
+              <span class="lp-tag">Neoplasia</span>
+              <span class="lp-tag">Immunology</span>
+            </div>
+          </div>
+        </div>
+        <div class="lp-course-card">
+          <div class="lp-course-header">
+            <span class="lp-course-icon">🫀</span>
+            <span class="lp-course-badge lp-badge-core">Core Module</span>
+            <h3 class="lp-course-name">Systemic Pathology</h3>
+          </div>
+          <div class="lp-course-body">
+            <p class="lp-course-desc">Organ-by-organ pathology: GI, hepatobiliary, respiratory, cardiovascular, renal, CNS, and bone. Image-based Q&amp;A included throughout.</p>
+            <div class="lp-course-tags">
+              <span class="lp-tag">GI Pathology</span>
+              <span class="lp-tag">Renal</span>
+              <span class="lp-tag">CNS</span>
+              <span class="lp-tag">Histopathology</span>
+            </div>
+          </div>
+        </div>
+        <div class="lp-course-card">
+          <div class="lp-course-header">
+            <span class="lp-course-icon">🧬</span>
+            <span class="lp-course-badge lp-badge-advanced">Advanced</span>
+            <h3 class="lp-course-name">Molecular Pathology</h3>
+          </div>
+          <div class="lp-course-body">
+            <p class="lp-course-desc">Techniques (FISH, PCR, NGS, IHC), oncogenes, tumour suppressor genes, WHO 5th Edition molecular entities, and liquid biopsy — fully updated.</p>
+            <div class="lp-course-tags">
+              <span class="lp-tag">FISH / PCR</span>
+              <span class="lp-tag">NGS</span>
+              <span class="lp-tag">WHO 5th Ed.</span>
+              <span class="lp-tag">IHC</span>
+            </div>
+          </div>
+        </div>
+        <div class="lp-course-card">
+          <div class="lp-course-header">
+            <span class="lp-course-icon">📊</span>
+            <span class="lp-course-badge lp-badge-practice">Practice</span>
+            <h3 class="lp-course-name">Mock Test Series</h3>
+          </div>
+          <div class="lp-course-body">
+            <p class="lp-course-desc">Full-length mocks mimicking real exam conditions for FRCPath Part 1 and NEET-SS. Detailed analytics, percentile ranking, and topic-wise performance reports.</p>
+            <div class="lp-course-tags">
+              <span class="lp-tag">5000+ MCQs</span>
+              <span class="lp-tag">Timed Mocks</span>
+              <span class="lp-tag">Analytics</span>
+              <span class="lp-tag">Past Papers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:36px;">
+        <a href="/courses/" class="lp-btn lp-btn-primary">View All Courses →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ TESTIMONIALS -->
+  <section class="lp-section lp-testi">
+    <div class="lp-container">
+      <div class="lp-center">
+        <span class="lp-section-label">Student Success</span>
+        <h2 class="lp-section-title">Results Speak Louder Than Promises</h2>
+        <p class="lp-section-sub">Hear from pathology residents who cleared their exams with ElearningFRCPath.</p>
+      </div>
+      <div class="lp-testi-grid">
+        <div class="lp-testi-card">
+          <div class="lp-testi-quote">"</div>
+          <p class="lp-testi-text">I was struggling with Haematopathology and Molecular Pathology for FRCPath Part 1. The WHO 5th Edition module here was a game-changer. Cleared in my second attempt with a comfortable margin. The mock tests felt harder than the real exam — which is exactly what you want.</p>
+          <div class="lp-testi-author">
+            <div class="lp-testi-avatar">DK</div>
+            <div>
+              <div class="lp-testi-name">Dr. Deepika K.</div>
+              <div class="lp-testi-meta">ST3 Histopathology, NHS England</div>
+              <div class="lp-testi-result">🎉 FRCPath Part 1 — Cleared</div>
+            </div>
+          </div>
+        </div>
+        <div class="lp-testi-card">
+          <div class="lp-testi-quote">"</div>
+          <p class="lp-testi-text">Preparing for NEET-SS while managing a junior resident's workload felt impossible. The concise notes and on-demand videos meant I could study in 30-minute windows. Topped my state in NEET-SS Pathology. The image-based MCQ practice is unmatched anywhere.</p>
+          <div class="lp-testi-author">
+            <div class="lp-testi-avatar">RS</div>
+            <div>
+              <div class="lp-testi-name">Dr. Rohan S.</div>
+              <div class="lp-testi-meta">Senior Resident, PGIMER Chandigarh</div>
+              <div class="lp-testi-result">🥇 NEET-SS Pathology — AIR 4</div>
+            </div>
+          </div>
+        </div>
+        <div class="lp-testi-card">
+          <div class="lp-testi-quote">"</div>
+          <p class="lp-testi-text">I used ElearningFRCPath for INI-SS after a colleague recommended it. The overlap between FRCPath and INI-SS content is real — one preparation genuinely works for both. Cleared INI-SS and joined AIIMS Delhi. Faculty accessibility for doubt-clearing was exceptional.</p>
+          <div class="lp-testi-author">
+            <div class="lp-testi-avatar">AT</div>
+            <div>
+              <div class="lp-testi-name">Dr. Anjali T.</div>
+              <div class="lp-testi-meta">DM Oncopathology, AIIMS New Delhi</div>
+              <div class="lp-testi-result">✅ INI-SS — Cleared, AIIMS Delhi</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ FAQ -->
+  <section class="lp-section lp-faq">
+    <div class="lp-container">
+      <div class="lp-center">
+        <span class="lp-section-label">FAQs</span>
+        <h2 class="lp-section-title">Frequently Asked Questions</h2>
+        <p class="lp-section-sub">Everything you need to know before you start.</p>
+      </div>
+      <div class="lp-faq-grid">
+        <details class="lp-faq-item">
+          <summary>Can one preparation really cover FRCPath, NEET-SS, and INI-SS? <span class="lp-faq-chevron">▼</span></summary>
+          <div class="lp-faq-body">Yes — and this is the core idea behind ElearningFRCPath. All three exams test General Pathology, Systemic Pathology, Haematopathology, and Molecular Pathology. The syllabus overlap is 85–90%. We structure our courses so that one thorough preparation equips you for all three exams, saving you months of repeated effort.</div>
+        </details>
+        <details class="lp-faq-item">
+          <summary>Is the content updated for WHO 5th Edition? <span class="lp-faq-chevron">▼</span></summary>
+          <div class="lp-faq-body">Absolutely. The WHO Classification of Tumours 5th Edition introduced major changes across haematological malignancies, soft tissue tumours, CNS tumours, and more. All our modules — notes, MCQs, and video lectures — have been reviewed and updated to reflect these changes. We also publish blog articles covering new WHO entities as they're examined.</div>
+        </details>
+        <details class="lp-faq-item">
+          <summary>How long does it take to prepare for FRCPath Part 1? <span class="lp-faq-chevron">▼</span></summary>
+          <div class="lp-faq-body">Most candidates who are in active ST1–ST3 training take 3–6 months of focused preparation alongside clinical work. With our structured course plan and daily 1–2 hours of study, candidates typically cover the complete syllabus in 12–14 weeks, leaving 4–6 weeks for revision and mock tests.</div>
+        </details>
+        <details class="lp-faq-item">
+          <summary>Can I access the courses on mobile? <span class="lp-faq-chevron">▼</span></summary>
+          <div class="lp-faq-body">Yes. All content — videos, notes, and MCQ practice — is fully accessible on smartphones, tablets, and desktops. The platform is optimized for mobile use so you can study during commutes, between clinic sessions, or whenever you have a spare 20–30 minutes.</div>
+        </details>
+        <details class="lp-faq-item">
+          <summary>Do you offer doubt-clearing support? <span class="lp-faq-chevron">▼</span></summary>
+          <div class="lp-faq-body">Yes. Every course includes access to our faculty for doubt-clearing. You can submit questions via the course portal and receive answers within 24–48 hours. We also run live doubt-clearing webinars once a month covering high-frequency exam topics and recent paper analysis.</div>
+        </details>
+        <details class="lp-faq-item">
+          <summary>Is there a free trial or refund policy? <span class="lp-faq-chevron">▼</span></summary>
+          <div class="lp-faq-body">We offer a 7-day free trial period for new students so you can experience the platform before committing. If you're not satisfied within the first 7 days of enrolment, we provide a full refund — no questions asked. Contact us at info@elearningfrcpath.in for any queries about access or billing.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════ FINAL CTA -->
+  <section class="lp-cta">
+    <div class="lp-cta-inner">
+      <div class="lp-cta-urgency">🔥 New Batch Starting Soon — Limited Seats</div>
+      <h2>Your FRCPath / NEET-SS Result Starts Today</h2>
+      <p>
+        Join 1200+ pathology residents who prepared smarter, not harder.
+        The next FRCPath Part 1 diet is in <strong style="color:#fff;">July 2025</strong> and NEET-SS in <strong style="color:#fff;">August 2025</strong>.
+        Don't wait — every week of preparation counts.
+      </p>
+      <a href="mailto:info@elearningfrcpath.in" class="lp-btn lp-btn-white">✉️ Enrol Now — Contact Us</a>
+      <div class="lp-cta-note">📧 info@elearningfrcpath.in &nbsp;·&nbsp; Response within 24 hours &nbsp;·&nbsp; No spam, ever.</div>
+    </div>
+  </section>
+
+</div>
+{{- end }}
