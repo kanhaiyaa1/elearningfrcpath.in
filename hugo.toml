@@ -1,0 +1,59 @@
+baseURL = "https://elearningfrcpath.in"
+languageCode = "en-us"
+title = "FRCPath & NEET SS Pathology"
+theme = "PaperMod"
+
+[params]
+description = "Daily updates, courses and resources for FRCPath and NEET SS Pathology preparation"
+author = "ElearningFRCPath"
+showReadingTime = true
+showShareButtons = true
+
+[params.homeInfoParams]
+Title = "FRCPath & NEET SS Pathology"
+Content = "Your gateway to pathology excellence"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:info@elearningfrcpath.in"
+
+[menu]
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+name = "About"
+url = "/about/"
+weight = 2
+[[menu.main]]
+name = "Courses"
+url = "/courses/"
+weight = 3
+[[menu.main]]
+name = "Teachers"
+url = "/teachers/"
+weight = 4
+[[menu.main]]
+name = "Blog"
+url = "/blog/"
+weight = 5
+[[menu.main]]
+name = "FAQs"
+url = "/faqs/"
+weight = 6
+[[menu.main]]
+name = "Reviews"
+url = "/reviews/"
+weight = 7
+[[menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 8
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+changefreq = "daily"
+priority = 0.5
