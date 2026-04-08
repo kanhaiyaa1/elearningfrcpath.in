@@ -19,7 +19,7 @@
 }
 .lp-wrap a { text-decoration: none; }
 .lp-section { padding: 72px 20px; }
-.lp-container { max-width: 1100px; margin: 0 auto; }
+.lp-container { width: 100%; padding: 0 40px; }
 .lp-section-label {
   display: inline-block;
   background: var(--light);
@@ -42,7 +42,7 @@
 .lp-section-sub {
   font-size: 1.05rem;
   color: var(--muted);
-  max-width: 640px;
+  max-width: 760px;
   margin: 0 auto 48px;
   line-height: 1.7;
 }
@@ -63,8 +63,8 @@
 }
 .lp-hero-inner {
   position: relative;
-  max-width: 820px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 40px;
   text-align: center;
 }
 .lp-hero-badge {
@@ -93,10 +93,8 @@
   font-size: clamp(1rem, 2vw, 1.2rem);
   color: rgba(255,255,255,0.82);
   line-height: 1.75;
-  margin: 0 0 36px;
-  max-width: 680px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto 36px;
+  max-width: 860px;
 }
 .lp-hero-sub strong { color: #fff; }
 .lp-hero-ctas {
@@ -151,10 +149,10 @@
 .lp-stats { background: var(--white); padding: 56px 20px; }
 .lp-stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
-  max-width: 900px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 0 40px;
 }
 .lp-stat-card {
   text-align: center;
@@ -424,7 +422,7 @@
   inset: 0;
   background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
-.lp-cta-inner { position: relative; max-width: 680px; margin: 0 auto; }
+.lp-cta-inner { position: relative; max-width: 860px; margin: 0 auto; padding: 0 40px; }
 .lp-cta-urgency {
   display: inline-flex;
   align-items: center;
@@ -488,10 +486,17 @@
 .dark .lp-table tr:nth-child(even) td { background: #1e293b; }
 .dark .lp-tag { background: #1e3a4a; color: #67e8f9; }
 
+@media (max-width: 900px) {
+  .lp-stats-grid { grid-template-columns: repeat(2, 1fr); padding: 0 20px; }
+  .lp-container { padding: 0 20px; }
+}
 @media (max-width: 640px) {
   .lp-section { padding: 52px 16px; }
   .lp-hero { padding: 64px 16px 56px; }
+  .lp-hero-inner { padding: 0 16px; }
   .lp-stats { padding: 40px 16px; }
+  .lp-stats-grid { grid-template-columns: 1fr 1fr; padding: 0 16px; }
+  .lp-container { padding: 0 16px; }
   .lp-btn { padding: 12px 22px; font-size: 0.93rem; }
 }
 </style>

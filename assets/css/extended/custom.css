@@ -1,0 +1,19 @@
+/* Full-width override — removes PaperMod's 720px/1024px caps */
+:root {
+  --main-width: 1400px;
+  --nav-width: 1400px;
+}
+
+.main,
+.nav,
+header nav,
+footer {
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+/* Keep inner content readable on very wide screens with padding */
+.post-single .post-content,
+.post-header {
+  max-width: 100%;
+}
