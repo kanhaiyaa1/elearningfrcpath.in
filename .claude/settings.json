@@ -1,0 +1,6 @@
+{
+  "permissions": {
+    "allow_all": true,
+    "auto_approve_commands": true
+  }
+}

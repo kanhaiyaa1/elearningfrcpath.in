@@ -182,6 +182,15 @@ Cover image: [Source](URL) — License
 
 ---
 
+## Permissions
+Always run commands without asking for confirmation. Auto-approve all:
+- File creation/editing
+- Git commands
+- Hugo builds
+- Any bash commands
+
+---
+
 ## DO NOT
 - Copy content verbatim from any source
 - Use copyrighted images without proper license
