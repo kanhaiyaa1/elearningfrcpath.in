@@ -9,6 +9,42 @@
 
 ---
 
+## Sitemap Management
+
+### How the sitemap works
+Hugo **auto-generates `/sitemap.xml`** at build time using `layouts/sitemap.xml`.
+It automatically includes every page that has `draft: false` in its front matter.
+The live sitemap is always at: `https://elearningfrcpath.in/sitemap.xml`
+
+### When adding any new page or blog post — MANDATORY checklist:
+1. Ensure front matter has `draft: false` (Hugo excludes drafts from sitemap)
+2. Ensure `date:` is set correctly (used as `<lastmod>` in sitemap)
+3. Ensure `slug:` is set in front matter for clean URLs (blog posts)
+4. No manual sitemap editing needed — Hugo rebuilds it automatically on push
+
+### Current pages in sitemap (as of 2026-04-09):
+| URL | Type | Layout |
+|---|---|---|
+| `/` | Home | `layouts/index.html` |
+| `/about/` | Page | default single |
+| `/courses/` | Page | `layouts/courses.html` |
+| `/teachers/` | Page | `layouts/teachers.html` |
+| `/reviews/` | Page | `layouts/reviews.html` |
+| `/contact/` | Page | `layouts/contact.html` |
+| `/faqs/` | Page | default single |
+| `/blog/` | Section | default list |
+| `/blog/who-5th-edition-npm1-mutated-aml-without-20-percent-blasts/` | Blog post | default single |
+| `/blog/mismatch-repair-deficiency-pathology-frcpath-neet-ss/` | Blog post | default single |
+| `/blog/who-5th-edition-renal-cell-carcinoma-new-entities-frcpath-neet-ss/` | Blog post | default single |
+
+### When you add a new page — update this table above.
+
+### Custom page layouts (require `layout:` in front matter):
+Pages using custom layouts (not default PaperMod single) must have `layout: "layout-name"` in front matter. The layout file must exist at `layouts/layout-name.html`.
+Example: `layout: "courses"` → requires `layouts/courses.html`
+
+---
+
 ## Target Audience
 - FRCPath Part 1 & Part 2 candidates (UK-based and global)
 - NEET-SS Pathology (Oncopathology / Histopathology) aspirants — India

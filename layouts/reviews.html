@@ -1,0 +1,243 @@
+{{- define "main" }}
+<style>
+.rv-page { max-width: 1100px; margin: 48px auto; padding: 0 28px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; box-sizing:border-box; }
+@media(max-width:640px){ .rv-page{ padding:0 16px; margin:28px auto; } }
+
+/* Hero */
+.rv-hero { text-align:center; margin-bottom:52px; }
+.rv-label { display:inline-block; background:#fefce8; color:#92400e; font-size:0.76rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em; padding:4px 14px; border-radius:20px; margin-bottom:12px; }
+[data-theme="dark"] .rv-label { background:#451a03; color:#fcd34d; }
+.rv-hero h1 { font-size:clamp(1.8rem,3.5vw,2.5rem); font-weight:900; color:#1a365d; margin:0 0 12px; }
+[data-theme="dark"] .rv-hero h1 { color:#93c5fd; }
+.rv-hero p { font-size:1.02rem; color:#718096; max-width:600px; margin:0 auto 24px; line-height:1.7; }
+[data-theme="dark"] .rv-hero p { color:#94a3b8; }
+
+/* Summary bar */
+.rv-summary { display:flex; align-items:center; justify-content:center; gap:32px; flex-wrap:wrap; margin-bottom:48px; }
+.rv-sum-item { text-align:center; }
+.rv-sum-num { font-size:2rem; font-weight:900; color:#1a365d; line-height:1; }
+[data-theme="dark"] .rv-sum-num { color:#93c5fd; }
+.rv-sum-lbl { font-size:0.8rem; color:#718096; margin-top:3px; }
+[data-theme="dark"] .rv-sum-lbl { color:#94a3b8; }
+.rv-sum-divider { width:1px; height:48px; background:#e2e8f0; }
+[data-theme="dark"] .rv-sum-divider { background:#334155; }
+.rv-stars { font-size:1.3rem; letter-spacing:2px; }
+
+/* Grid */
+.rv-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:24px; }
+@media(max-width:640px){ .rv-grid{ grid-template-columns:1fr; } }
+
+/* Card */
+.rv-card { background:#fff; border:1px solid #e2e8f0; border-radius:14px; padding:24px; display:flex; flex-direction:column; transition:box-shadow .2s,transform .2s; }
+.rv-card:hover { box-shadow:0 6px 28px rgba(26,54,93,.1); transform:translateY(-2px); }
+[data-theme="dark"] .rv-card { background:#1e293b; border-color:#334155; }
+
+.rv-card-top { display:flex; align-items:center; justify-content:space-between; margin-bottom:14px; }
+.rv-author { display:flex; align-items:center; gap:10px; }
+.rv-avatar { width:42px; height:42px; border-radius:50%; background:linear-gradient(135deg,#1a365d,#319795); display:flex; align-items:center; justify-content:center; font-size:0.95rem; font-weight:800; color:#fff; flex-shrink:0; }
+.rv-name { font-weight:700; font-size:0.95rem; color:#1a365d; }
+[data-theme="dark"] .rv-name { color:#93c5fd; }
+.rv-card-stars { font-size:0.85rem; letter-spacing:1px; }
+
+.rv-exam-badge { display:inline-block; font-size:0.7rem; font-weight:700; padding:2px 9px; border-radius:20px; margin-bottom:12px; }
+.rv-badge-p1 { background:#ebf8ff; color:#2b6cb0; }
+.rv-badge-p2 { background:#f0fff4; color:#276749; }
+.rv-badge-both { background:#faf5ff; color:#6b21a8; }
+[data-theme="dark"] .rv-badge-p1  { background:#172554; color:#93c5fd; }
+[data-theme="dark"] .rv-badge-p2  { background:#14532d; color:#86efac; }
+[data-theme="dark"] .rv-badge-both { background:#3b0764; color:#d8b4fe; }
+
+.rv-text { font-size:0.9rem; color:#4a5568; line-height:1.72; flex:1; font-style:italic; }
+[data-theme="dark"] .rv-text { color:#94a3b8; }
+.rv-text::before { content:'"'; font-size:1.6rem; color:#319795; line-height:0; vertical-align:-0.4rem; margin-right:2px; font-style:normal; }
+.rv-text::after  { content:'"'; font-size:1.6rem; color:#319795; line-height:0; vertical-align:-0.4rem; margin-left:2px; font-style:normal; }
+
+/* CTA */
+.rv-cta { margin-top:52px; text-align:center; background:linear-gradient(135deg,#1a365d,#319795); border-radius:16px; padding:36px 28px; }
+.rv-cta h3 { font-size:1.3rem; font-weight:800; color:#fff; margin:0 0 8px; }
+.rv-cta p  { color:rgba(255,255,255,.78); font-size:0.92rem; margin:0 0 20px; }
+.rv-cta a  { display:inline-block; background:#fff; color:#1a365d; padding:11px 28px; border-radius:8px; font-weight:700; font-size:0.95rem; text-decoration:none; }
+.rv-cta a:hover { background:#e6fffa; }
+</style>
+
+<div class="rv-page">
+
+  <div class="rv-hero">
+    <span class="rv-label">Student Reviews</span>
+    <h1>Results from Real Pathology Residents</h1>
+    <p>Verified reviews from FRCPath Part 1 &amp; Part 2 candidates who prepared with ElearningFRCPath.</p>
+  </div>
+
+  <div class="rv-summary">
+    <div class="rv-sum-item">
+      <div class="rv-stars">⭐⭐⭐⭐⭐</div>
+      <div class="rv-sum-lbl">Average Rating</div>
+    </div>
+    <div class="rv-sum-divider"></div>
+    <div class="rv-sum-item">
+      <div class="rv-sum-num">12</div>
+      <div class="rv-sum-lbl">Verified Reviews</div>
+    </div>
+    <div class="rv-sum-divider"></div>
+    <div class="rv-sum-item">
+      <div class="rv-sum-num">126<span style="font-size:1.2rem;color:#319795;">+</span></div>
+      <div class="rv-sum-lbl">Postgraduates Enrolled</div>
+    </div>
+  </div>
+
+  <div class="rv-grid">
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">AM</div>
+          <div class="rv-name">Anu Mari</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-p1">FRCPath Preparation</span>
+      <p class="rv-text">I joined the e-learning FRCPath platform and it has been extremely helpful for my preparation. The recorded classes by Dr Akshay Bali and Dr. Maitrayee Roy are clear, detailed and easy to revisit anytime. I especially liked the system-wise mock tests, which really strengthened my concepts and exam approach. The content is updated, explanations are exam-oriented, and the interface is simple to use. The question bank is wide and reflects real exam patterns. Overall, it's a very reliable platform for anyone preparing for FRCPath. Highly recommended.</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">KB</div>
+          <div class="rv-name">Kaneeka Bhatnagar</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-p2">FRCPath Part 2 — Cleared</span>
+      <p class="rv-text">I recently passed my FRCPath Part 2 exam and am really grateful to Dr. Maitrayee. She is an outstanding teacher. Her classes are clear, well-structured, and focused on what truly matters for the exam. She explains difficult topics in a simple, practical way and offers excellent exam-oriented tips. Her notes are absolutely essential for anyone preparing the exam. She teaches long cases with great ease which are really useful during exam. The mock exams are equally very useful with individual feedback and marking. Highly recommended for anyone preparing for FRCPath Part 2.</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">PK</div>
+          <div class="rv-name">Prachi Kate</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-both">FRCPath Part 1 &amp; Part 2 — Cleared</span>
+      <p class="rv-text">I cleared FRCPath Part 2 in my 1st attempt. I started my preparation with Dr Maitrayee Roy's course. The course is quite comprehensive — all segments of the exam are covered very elaborately. One gets all recordings and notes in downloadable format, which is very helpful to revise. Dr Maitrayee teaches the approach towards writing the case as per RCPath guidelines. I always followed her quote: 'Length of answer is not important. It is important how precisely you write the content.' Her system-wise approach covering short case, molecular, gross and dataset points of one system in one go is incredibly effective. The full mock test is a real exam feel. For FRCPath Part 1 also I had joined Dr Maitrayee's course.</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">RR</div>
+          <div class="rv-name">Reema Rana</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-p1">FRCPath Preparation</span>
+      <p class="rv-text">E-learning study platform has been extremely helpful in my preparation for exam. It has all the up-to-date system-wise notes and MCQs. Their website is user friendly and Dr Bali was very prompt with any queries related to courses and general exam related doubts. The sessions by Dr Roy and Dr Bali are thorough with recordings to your rescue closer to exam days. Appreciate the effort they put in and highly recommend them.</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">AL</div>
+          <div class="rv-name">Abhijith Lakshman</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-both">FRCPath Part 1 &amp; Part 2 — Cleared</span>
+      <p class="rv-text">Excellent materials and approach. I recently cleared both FRCPath (Histopathology) Part 1 and Part 2 and am grateful for all the help. Dr. Maitrayee Roy's course is outstanding — her lectures are crisp, concise, and straight to the point, with no unnecessary fluff. She focuses exactly on what the exam tests: concept clarity, pattern recognition, mnemonics, and detailed explanations for tricky topics. Dr. Akshay Bali also has a great approach to teaching and stands out with how exam-oriented everything is — it helped me avoid overload and build real diagnostic reasoning with high-yield points. I would highly recommend this course for anyone preparing for these exams.</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">VD</div>
+          <div class="rv-name">Vishesh Dhawan</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-p1">FRCPath Preparation</span>
+      <p class="rv-text">I wish to acknowledge the exemplary efforts of Dr. Maitrayee Roy ma'am and Dr. Akshay Bali sir for their outstanding contribution to pathology education through their ElearningFRCPath platform. Their dedication to delivering high-quality, well-structured teaching has helped me in improving my day-to-day skills and in my entrance exams. Thank you ma'am and sir.</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">SD</div>
+          <div class="rv-name">Soundharya Devi</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-both">FRCPath Part 1 &amp; Part 2 — Cleared</span>
+      <p class="rv-text">I was a 27-year-old pathology resident dreaming of FRCPath when I first heard about Dr. Maitrayee ma'am. Later it became my identity. Ma'am was inspiring me everyday — I took her coaching for Part 1 and developed my basic concepts through her videos and notes, clearing Part 1 at the end of my 2nd year residency. It is solely due to Dr. Maitrayee ma'am. For Part 2 also I took her course, which is such a strong foundation that nobody can shake — upon which I did a few more courses and cleared my Part 2 recently. I attribute all my success to ma'am and am forever grateful for the team.</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">SP</div>
+          <div class="rv-name">Santhi Priya</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-p1">FRCPath Part 1 — Cleared</span>
+      <p class="rv-text">E-learning FRCPath is the best course out there for FRCPath preparation. I attended the Part 1 course by Akshay Bali sir. Their curriculum is as close to exam standards as possible and includes autopsy and clinical governance — topics which nobody else is teaching. I highly recommend these courses for FRCPath preparation.</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">Å</div>
+          <div class="rv-name">Åhelï</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-both">FRCPath Part 1 &amp; Part 2 — Cleared</span>
+      <p class="rv-text">I attended Dr Maitrayee's course for FRCPath Part 1 and the classes formed a basis for my Part 2 preparation. I cleared my Part 2 in Autumn 2025. I'm grateful to Maitrayee ma'am for her conceptual classes, especially in renal, liver and lymphoma — which are difficult topics for the exam.</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">JD</div>
+          <div class="rv-name">Jayati Datta</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-p1">FRCPath Part 1 — Cleared</span>
+      <p class="rv-text">Heartfelt gratitude to Akshay sir and Maitrayee madam! Your enthusiasm, encouragement, support and the superb reading materials you provided have transformed me as a pathologist. Part 1 done and dusted. Gearing up for the next drill, which would surely test our endurance. Warm regards and best wishes.</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">AS</div>
+          <div class="rv-name">Amrapali Samadder</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-p1">FRCPath Part 1 — Cleared</span>
+      <p class="rv-text">I'm very grateful to ElearningFRCPath for the tremendous support that helped me clear FRCPath Part 1! The structured course design, expert-led lectures, high-yield notes and regular mock tests made the vast syllabus digestible and aligned with the actual exam format. The guidance was clear, practical and helped build confidence step by step. If you're serious about FRCPath preparation, this platform is a game-changer!</p>
+    </div>
+
+    <div class="rv-card">
+      <div class="rv-card-top">
+        <div class="rv-author">
+          <div class="rv-avatar">AS</div>
+          <div class="rv-name">Archana Shivmurthy</div>
+        </div>
+        <div class="rv-card-stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <span class="rv-exam-badge rv-badge-p1">FRCPath Part 1 — Cleared</span>
+      <p class="rv-text">I wholeheartedly thank Dr Roy and Dr Bali for their guidance in clearing FRCPath Part 1 exam. Their notes and recordings were very precise and covered all important topics. Thank you very much sir and ma'am.</p>
+    </div>
+
+  </div>
+
+  <div class="rv-cta">
+    <h3>Join the next batch of successful FRCPath candidates</h3>
+    <p>Start with a free demo session — no commitment required.</p>
+    <a href="https://www.elearningfrcpath.com/free-demo-session-frcpath-part-1" target="_blank" rel="noopener">🎁 Try Free Demo →</a>
+  </div>
+
+</div>
+{{- end }}
