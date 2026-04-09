@@ -14,6 +14,12 @@ showShareButtons = true
 keywords = ["FRCPath preparation", "NEET-SS pathology", "pathology MCQ", "histopathology course", "INI-SS pathology", "FRCPath Part 1", "pathology exam preparation"]
 images = ["/images/og-cover.png"]
 
+[params.assets]
+favicon          = "/favicon.ico"
+favicon16x16     = "/favicon.ico"
+favicon32x32     = "/favicon.ico"
+apple_touch_icon = "/favicon.ico"
+
 [[params.socialIcons]]
 name = "email"
 url = "mailto:info@elearningfrcpath.in"

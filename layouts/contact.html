@@ -1,0 +1,366 @@
+{{- define "main" }}
+<style>
+/* ── Contact Page ─────────────────────────────────────────────── */
+.cf-page {
+  max-width: 1020px;
+  margin: 48px auto;
+  padding: 0 24px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  box-sizing: border-box;
+}
+.cf-page-title {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 900;
+  color: #1a365d;
+  margin: 0 0 6px;
+}
+[data-theme="dark"] .cf-page-title { color: #93c5fd; }
+.cf-page-sub {
+  color: #718096;
+  font-size: 1rem;
+  margin: 0 0 36px;
+  line-height: 1.6;
+}
+[data-theme="dark"] .cf-page-sub { color: #94a3b8; }
+
+.cf-wrap {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+@media (max-width: 760px) {
+  .cf-wrap { grid-template-columns: 1fr; gap: 24px; }
+  .cf-page { margin: 28px auto; padding: 0 16px; }
+}
+
+/* ── Info Panel ──────────────────────────────────────────────── */
+.cf-info {
+  background: linear-gradient(160deg, #1a365d 0%, #2b4c7e 60%, #319795 100%);
+  border-radius: 16px;
+  padding: 32px 26px;
+  color: #fff;
+  box-sizing: border-box;
+}
+.cf-info-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 0 0 6px;
+}
+.cf-info-sub {
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+  margin: 0 0 28px;
+}
+.cf-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.cf-info-icon {
+  width: 38px; height: 38px;
+  border-radius: 9px;
+  background: rgba(255,255,255,0.14);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+.cf-info-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 3px;
+}
+.cf-info-value {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.9);
+  line-height: 1.4;
+}
+.cf-info-value a { color: #81e6d9; text-decoration: none; }
+.cf-info-value a:hover { text-decoration: underline; }
+.cf-note {
+  margin-top: 24px;
+  padding: 13px 15px;
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 10px;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.78);
+  line-height: 1.55;
+}
+
+/* ── Form Card ───────────────────────────────────────────────── */
+.cf-form-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 32px 28px;
+  box-shadow: 0 4px 24px rgba(26,54,93,0.07);
+  box-sizing: border-box;
+  min-width: 0;
+}
+[data-theme="dark"] .cf-form-card {
+  background: #1e293b;
+  border-color: #334155;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+}
+.cf-form-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1a365d;
+  margin: 0 0 22px;
+}
+[data-theme="dark"] .cf-form-title { color: #93c5fd; }
+
+.cf-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+@media (max-width: 520px) { .cf-row { grid-template-columns: 1fr; } }
+
+.cf-field { margin-bottom: 16px; min-width: 0; }
+.cf-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 5px;
+  letter-spacing: 0.02em;
+}
+[data-theme="dark"] .cf-label { color: #94a3b8; }
+.cf-label .req { color: #e53e3e; margin-left: 2px; }
+
+.cf-input, .cf-select, .cf-textarea {
+  width: 100%;
+  padding: 10px 13px;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.93rem;
+  color: #2d3748;
+  background: #f8fafc;
+  outline: none;
+  transition: border-color 0.18s, box-shadow 0.18s;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+[data-theme="dark"] .cf-input,
+[data-theme="dark"] .cf-select,
+[data-theme="dark"] .cf-textarea {
+  background: #0f172a;
+  border-color: #334155;
+  color: #e2e8f0;
+}
+.cf-input:focus, .cf-select:focus, .cf-textarea:focus {
+  border-color: #319795;
+  box-shadow: 0 0 0 3px rgba(49,151,149,0.14);
+  background: #fff;
+}
+[data-theme="dark"] .cf-input:focus,
+[data-theme="dark"] .cf-select:focus,
+[data-theme="dark"] .cf-textarea:focus { background: #1e293b; }
+
+.cf-input::placeholder, .cf-textarea::placeholder { color: #a0aec0; }
+[data-theme="dark"] .cf-input::placeholder,
+[data-theme="dark"] .cf-textarea::placeholder { color: #475569; }
+
+.cf-textarea { resize: vertical; min-height: 120px; line-height: 1.6; }
+
+.cf-select { appearance: none; cursor: pointer; }
+
+/* Submit */
+.cf-submit {
+  width: 100%;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #1a365d 0%, #319795 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.97rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: opacity 0.18s, transform 0.15s;
+  margin-top: 4px;
+  font-family: inherit;
+  letter-spacing: 0.01em;
+}
+.cf-submit:hover:not(:disabled) { opacity: 0.88; transform: translateY(-1px); }
+.cf-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+/* Spinner */
+.cf-spinner {
+  width: 17px; height: 17px;
+  border: 2px solid rgba(255,255,255,0.35);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: cf-spin 0.65s linear infinite;
+  display: none;
+  flex-shrink: 0;
+}
+.cf-submit.loading .cf-spinner { display: block; }
+.cf-submit.loading .cf-btn-txt { opacity: 0.75; }
+@keyframes cf-spin { to { transform: rotate(360deg); } }
+
+/* Alerts */
+.cf-alert {
+  padding: 13px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 14px;
+  display: none;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.5;
+}
+.cf-alert.show { display: flex; }
+.cf-alert-ok  { background:#f0fff4; border:1px solid #9ae6b4; color:#276749; }
+.cf-alert-err { background:#fff5f5; border:1px solid #feb2b2; color:#c53030; }
+[data-theme="dark"] .cf-alert-ok  { background:#14532d; border-color:#166534; color:#86efac; }
+[data-theme="dark"] .cf-alert-err { background:#450a0a; border-color:#7f1d1d; color:#fca5a5; }
+</style>
+
+<div class="cf-page">
+  <h1 class="cf-page-title">Contact Us</h1>
+  <p class="cf-page-sub">Questions about our FRCPath or NEET-SS courses? We're here to help — typically within 24 hours.</p>
+
+  <div class="cf-wrap">
+
+    <!-- Info panel -->
+    <div class="cf-info">
+      <div class="cf-info-title">Get in Touch</div>
+      <p class="cf-info-sub">Reach out for course queries, enrolment, or study guidance.</p>
+
+      <div class="cf-info-item">
+        <div class="cf-info-icon">📧</div>
+        <div>
+          <div class="cf-info-label">Email</div>
+          <div class="cf-info-value"><a href="mailto:info@elearningfrcpath.in">info@elearningfrcpath.in</a></div>
+        </div>
+      </div>
+
+      <div class="cf-info-item">
+        <div class="cf-info-icon">🎓</div>
+        <div>
+          <div class="cf-info-label">Courses</div>
+          <div class="cf-info-value">FRCPath Part 1 &amp; 2 · NEET-SS · INI-SS</div>
+        </div>
+      </div>
+
+      <div class="cf-info-item">
+        <div class="cf-info-icon">🌐</div>
+        <div>
+          <div class="cf-info-label">Main Platform</div>
+          <div class="cf-info-value"><a href="https://elearningfrcpath.com" target="_blank" rel="noopener">elearningfrcpath.com</a></div>
+        </div>
+      </div>
+
+      <div class="cf-info-item">
+        <div class="cf-info-icon">🕐</div>
+        <div>
+          <div class="cf-info-label">Response Time</div>
+          <div class="cf-info-value">24–48 hours · Mon–Sat</div>
+        </div>
+      </div>
+
+      <div class="cf-note">
+        💡 For access or payment issues, include your registered email in the message for faster help.
+      </div>
+    </div>
+
+    <!-- Form card -->
+    <div class="cf-form-card">
+      <div class="cf-form-title">Send Us a Message</div>
+      <form id="cfForm">
+        <input type="hidden" name="access_key" value="4b0b9adf-b7c0-406e-9b98-db5604433afd">
+        <input type="hidden" name="subject"   id="cfSubject" value="New Contact — ElearningFRCPath">
+        <input type="hidden" name="from_name" value="ElearningFRCPath Contact Form">
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1">
+
+        <div class="cf-row">
+          <div class="cf-field">
+            <label class="cf-label" for="cfName">Full Name <span class="req">*</span></label>
+            <input class="cf-input" type="text" id="cfName" name="name" placeholder="Dr. Priya Sharma" required autocomplete="name">
+          </div>
+          <div class="cf-field">
+            <label class="cf-label" for="cfPhone">Phone Number</label>
+            <input class="cf-input" type="tel" id="cfPhone" name="phone" placeholder="+91 98765 43210" autocomplete="tel">
+          </div>
+        </div>
+
+        <div class="cf-field">
+          <label class="cf-label" for="cfEmail">Email Address <span class="req">*</span></label>
+          <input class="cf-input" type="email" id="cfEmail" name="email" placeholder="you@example.com" required autocomplete="email">
+        </div>
+
+        <div class="cf-field">
+          <label class="cf-label" for="cfInterest">I'm enquiring about</label>
+          <select class="cf-select" id="cfInterest" name="interest">
+            <option value="">— Select a topic —</option>
+            <option>FRCPath Part 1 Preparation</option>
+            <option>FRCPath Part 2 Preparation</option>
+            <option>NEET-SS Pathology Course</option>
+            <option>INI-SS Pathology Preparation</option>
+            <option>MCQ Bank / Mock Tests</option>
+            <option>Course Access / Technical Issue</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="cf-field">
+          <label class="cf-label" for="cfMsg">Message <span class="req">*</span></label>
+          <textarea class="cf-textarea" id="cfMsg" name="message" placeholder="Tell us how we can help you…" required></textarea>
+        </div>
+
+        <button type="submit" class="cf-submit" id="cfBtn">
+          <div class="cf-spinner"></div>
+          <span class="cf-btn-txt">✉️&nbsp; Send Message</span>
+        </button>
+
+        <div class="cf-alert cf-alert-ok"  id="cfOk">✅ Message sent! We'll reply within 24–48 hours.</div>
+        <div class="cf-alert cf-alert-err" id="cfErr">❌ Something went wrong. Email us directly at <a href="mailto:info@elearningfrcpath.in">info@elearningfrcpath.in</a></div>
+      </form>
+    </div>
+
+  </div>
+</div>
+
+<script>
+document.getElementById('cfForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('cfBtn');
+  const ok  = document.getElementById('cfOk');
+  const err = document.getElementById('cfErr');
+  const interest = document.getElementById('cfInterest').value;
+
+  document.getElementById('cfSubject').value = interest
+    ? '[' + interest + '] Contact — ElearningFRCPath'
+    : 'New Contact — ElearningFRCPath';
+
+  btn.disabled = true;
+  btn.classList.add('loading');
+  ok.classList.remove('show');
+  err.classList.remove('show');
+
+  try {
+    const res  = await fetch('https://api.web3forms.com/submit', { method:'POST', body: new FormData(this) });
+    const data = await res.json();
+    if (data.success) { ok.classList.add('show'); this.reset(); }
+    else              { err.classList.add('show'); }
+  } catch(_) {
+    err.classList.add('show');
+  } finally {
+    btn.disabled = false;
+    btn.classList.remove('loading');
+  }
+});
+</script>
+{{- end }}
