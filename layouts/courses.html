@@ -1,0 +1,254 @@
+{{- define "main" }}
+<style>
+.cr-page { max-width: 1100px; margin: 48px auto; padding: 0 28px; font-family: -apple-system, BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; box-sizing: border-box; }
+.cr-hero { text-align: center; margin-bottom: 56px; }
+.cr-label { display:inline-block; background:#e6fffa; color:#2c7a7b; font-size:0.76rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em; padding:4px 14px; border-radius:20px; margin-bottom:12px; }
+[data-theme="dark"] .cr-label { background:#1e3a4a; color:#67e8f9; }
+.cr-hero h1 { font-size:clamp(1.8rem,3.5vw,2.6rem); font-weight:900; color:#1a365d; margin:0 0 12px; line-height:1.2; }
+[data-theme="dark"] .cr-hero h1 { color:#93c5fd; }
+.cr-hero p { font-size:1.05rem; color:#718096; max-width:660px; margin:0 auto 28px; line-height:1.7; }
+[data-theme="dark"] .cr-hero p { color:#94a3b8; }
+.cr-free-badge { display:inline-flex; align-items:center; gap:8px; background:#f0fff4; border:1px solid #9ae6b4; color:#276749; font-size:0.88rem; font-weight:600; padding:8px 20px; border-radius:30px; text-decoration:none; transition:background .15s; }
+.cr-free-badge:hover { background:#c6f6d5; }
+[data-theme="dark"] .cr-free-badge { background:#14532d; border-color:#166534; color:#86efac; }
+
+/* Grid */
+.cr-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:24px; }
+@media(max-width:640px){ .cr-grid{ grid-template-columns:1fr; } .cr-page{ padding:0 16px; margin:28px auto; } }
+
+/* Card */
+.cr-card { background:#fff; border:1px solid #e2e8f0; border-radius:14px; overflow:hidden; display:flex; flex-direction:column; transition:box-shadow .2s,transform .2s; }
+.cr-card:hover { box-shadow:0 8px 32px rgba(26,54,93,.12); transform:translateY(-3px); }
+[data-theme="dark"] .cr-card { background:#1e293b; border-color:#334155; }
+.cr-card-top { padding:22px 22px 14px; border-bottom:1px solid #f0f4f8; }
+[data-theme="dark"] .cr-card-top { border-color:#334155; }
+.cr-card-icon { font-size:2rem; margin-bottom:10px; display:block; }
+.cr-badge { display:inline-block; font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:.08em; padding:3px 10px; border-radius:20px; margin-bottom:10px; }
+.cr-badge-pop  { background:#ebf8ff; color:#2b6cb0; }
+.cr-badge-adv  { background:#fef3c7; color:#92400e; }
+.cr-badge-prac { background:#f0fff4; color:#276749; }
+.cr-badge-free { background:#e6fffa; color:#2c7a7b; }
+.cr-badge-neet { background:#faf5ff; color:#6b21a8; }
+[data-theme="dark"] .cr-badge-pop  { background:#172554; color:#93c5fd; }
+[data-theme="dark"] .cr-badge-adv  { background:#451a03; color:#fcd34d; }
+[data-theme="dark"] .cr-badge-prac { background:#14532d; color:#86efac; }
+[data-theme="dark"] .cr-badge-free { background:#1e3a4a; color:#67e8f9; }
+[data-theme="dark"] .cr-badge-neet { background:#3b0764; color:#d8b4fe; }
+.cr-card-name { font-size:1.05rem; font-weight:800; color:#1a365d; margin:0 0 4px; line-height:1.3; }
+[data-theme="dark"] .cr-card-name { color:#93c5fd; }
+.cr-card-body { padding:14px 22px 20px; flex:1; display:flex; flex-direction:column; }
+.cr-card-desc { font-size:0.9rem; color:#4a5568; line-height:1.65; margin:0 0 14px; flex:1; }
+[data-theme="dark"] .cr-card-desc { color:#94a3b8; }
+.cr-tags { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:16px; }
+.cr-tag { font-size:0.74rem; background:#f0f7f7; color:#2c7a7b; padding:3px 9px; border-radius:20px; font-weight:500; }
+[data-theme="dark"] .cr-tag { background:#1e3a4a; color:#67e8f9; }
+.cr-enrol-btn { display:inline-flex; align-items:center; justify-content:center; gap:6px; padding:10px 18px; background:linear-gradient(135deg,#1a365d,#319795); color:#fff; border-radius:8px; font-size:0.88rem; font-weight:700; text-decoration:none; transition:opacity .15s,transform .15s; }
+.cr-enrol-btn:hover { opacity:.88; transform:translateY(-1px); }
+
+/* Section divider */
+.cr-section-head { margin: 48px 0 20px; }
+.cr-section-head h2 { font-size:1.3rem; font-weight:800; color:#1a365d; padding-left:14px; border-left:4px solid #319795; margin:0 0 4px; }
+[data-theme="dark"] .cr-section-head h2 { color:#93c5fd; }
+.cr-section-head p { font-size:0.9rem; color:#718096; padding-left:18px; margin:0; }
+[data-theme="dark"] .cr-section-head p { color:#94a3b8; }
+
+/* CTA strip */
+.cr-cta { margin-top:56px; background:linear-gradient(135deg,#1a365d 0%,#319795 100%); border-radius:16px; padding:36px 32px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px; }
+.cr-cta-text h3 { font-size:1.3rem; font-weight:800; color:#fff; margin:0 0 6px; }
+.cr-cta-text p { font-size:0.92rem; color:rgba(255,255,255,.78); margin:0; }
+.cr-cta-btn { background:#fff; color:#1a365d; padding:12px 28px; border-radius:8px; font-weight:700; font-size:0.95rem; text-decoration:none; white-space:nowrap; transition:background .15s; }
+.cr-cta-btn:hover { background:#e6fffa; }
+@media(max-width:640px){ .cr-cta{ text-align:center; } .cr-cta-text{ width:100%; } }
+</style>
+
+<div class="cr-page">
+
+  <!-- Hero -->
+  <div class="cr-hero">
+    <span class="cr-label">All Courses</span>
+    <h1>Expert-Led Pathology Exam Preparation</h1>
+    <p>Every course is built by MD FRCPath-qualified faculty for FRCPath Part 1 &amp; 2, NEET-SS, INI-SS, and NEET-PG. Start with our free demo — no commitment required.</p>
+    <a href="https://www.elearningfrcpath.com/free-demo-session-frcpath-part-1" target="_blank" rel="noopener" class="cr-free-badge">
+      🎁 Try a Free Demo Session First
+    </a>
+  </div>
+
+  <!-- Section: Full Courses -->
+  <div class="cr-section-head">
+    <h2>Full Courses</h2>
+    <p>Comprehensive end-to-end preparation — lectures, notes, and MCQs in one bundle.</p>
+  </div>
+  <div class="cr-grid">
+
+    <div class="cr-card">
+      <div class="cr-card-top">
+        <span class="cr-card-icon">🎓</span>
+        <span class="cr-badge cr-badge-pop">Most Popular</span>
+        <h3 class="cr-card-name">Full Course — FRCPath Part 1 / NEET-SS (Oncopath) / INI-SS</h3>
+      </div>
+      <div class="cr-card-body">
+        <p class="cr-card-desc">Complete FRCPath Part 1 Histopathology preparation with expert-led video lectures, 800+ MCQs, mock tests and exam-focused notes. One course covers FRCPath Part 1, NEET-SS, and INI-SS simultaneously thanks to 90%+ syllabus overlap.</p>
+        <div class="cr-tags">
+          <span class="cr-tag">Video Lectures</span>
+          <span class="cr-tag">800+ MCQs</span>
+          <span class="cr-tag">Mock Tests</span>
+          <span class="cr-tag">PDF Notes</span>
+          <span class="cr-tag">FRCPath + NEET-SS</span>
+        </div>
+        <a href="https://www.elearningfrcpath.com/frcpath-part-1-histopathology-course" target="_blank" rel="noopener" class="cr-enrol-btn">Enrol Now →</a>
+      </div>
+    </div>
+
+    <div class="cr-card">
+      <div class="cr-card-top">
+        <span class="cr-card-icon">🏆</span>
+        <span class="cr-badge cr-badge-adv">Advanced</span>
+        <h3 class="cr-card-name">Full Course — FRCPath Part 2 Histopathology</h3>
+      </div>
+      <div class="cr-card-body">
+        <p class="cr-card-desc">Advanced FRCPath Part 2 training focused on long cases, OSPE, viva, cytology, and frozen sections. Designed for candidates progressing to fellowship level after clearing Part 1.</p>
+        <div class="cr-tags">
+          <span class="cr-tag">Long Cases</span>
+          <span class="cr-tag">OSPE / Viva</span>
+          <span class="cr-tag">Cytology</span>
+          <span class="cr-tag">Frozen Sections</span>
+        </div>
+        <a href="https://www.elearningfrcpath.com/frcpath-part-2-histopathology-course" target="_blank" rel="noopener" class="cr-enrol-btn">Enrol Now →</a>
+      </div>
+    </div>
+
+    <div class="cr-card">
+      <div class="cr-card-top">
+        <span class="cr-card-icon">🔬</span>
+        <span class="cr-badge cr-badge-pop">Diagnostic Skills</span>
+        <h3 class="cr-card-name">Applied Histology for Histopathologists</h3>
+      </div>
+      <div class="cr-card-body">
+        <p class="cr-card-desc">Expert-led applied histology course focused on real-world diagnostic histopathology and organ-based tissue interpretation. Bridges the gap between theory and bench practice.</p>
+        <div class="cr-tags">
+          <span class="cr-tag">Organ-based</span>
+          <span class="cr-tag">Diagnostic</span>
+          <span class="cr-tag">Tissue Interpretation</span>
+        </div>
+        <a href="https://www.elearningfrcpath.com/applied-histology-for-histopathologists" target="_blank" rel="noopener" class="cr-enrol-btn">Enrol Now →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Section: MCQs & Mock Tests -->
+  <div class="cr-section-head">
+    <h2>MCQs &amp; Mock Tests</h2>
+    <p>Targeted practice resources — buy standalone or as part of a full course bundle.</p>
+  </div>
+  <div class="cr-grid">
+
+    <div class="cr-card">
+      <div class="cr-card-top">
+        <span class="cr-card-icon">📝</span>
+        <span class="cr-badge cr-badge-prac">800+ MCQs</span>
+        <h3 class="cr-card-name">Mock Tests — FRCPath Part 1 / NEET-SS / INI-SS</h3>
+      </div>
+      <div class="cr-card-body">
+        <p class="cr-card-desc">Weekly updated 800+ exam-oriented MCQs with system-wise and mixed mock tests. Designed to simulate actual FRCPath Part 1, NEET-SS (Oncopath), and INI-SS paper patterns with full explanations.</p>
+        <div class="cr-tags">
+          <span class="cr-tag">Weekly Updates</span>
+          <span class="cr-tag">System-wise</span>
+          <span class="cr-tag">Mixed Mocks</span>
+          <span class="cr-tag">Detailed Explanations</span>
+        </div>
+        <a href="https://www.elearningfrcpath.com/frcpath-part-1-mock-tests-online" target="_blank" rel="noopener" class="cr-enrol-btn">Access MCQs →</a>
+      </div>
+    </div>
+
+    <div class="cr-card">
+      <div class="cr-card-top">
+        <span class="cr-card-icon">📊</span>
+        <span class="cr-badge cr-badge-adv">FRCPath Part 2</span>
+        <h3 class="cr-card-name">Mock Test — FRCPath Part 2</h3>
+      </div>
+      <div class="cr-card-body">
+        <p class="cr-card-desc">Targeted mock tests for FRCPath Part 2 candidates covering long case format, structured questions, and viva-style scenarios to prepare for the advanced level examination.</p>
+        <div class="cr-tags">
+          <span class="cr-tag">Long Case Format</span>
+          <span class="cr-tag">Structured Qs</span>
+          <span class="cr-tag">Part 2 Pattern</span>
+        </div>
+        <a href="https://www.elearningfrcpath.com/frcpath-part-2-mock-test" target="_blank" rel="noopener" class="cr-enrol-btn">Access Mock Test →</a>
+      </div>
+    </div>
+
+    <div class="cr-card">
+      <div class="cr-card-top">
+        <span class="cr-card-icon">📄</span>
+        <span class="cr-badge cr-badge-prac">Notes</span>
+        <h3 class="cr-card-name">High-Yield Notes — FRCPath Part 1 / NEET-SS</h3>
+      </div>
+      <div class="cr-card-body">
+        <p class="cr-card-desc">High-yield, exam-oriented PDF notes with handwritten compilations, molecular updates and system-wise coverage. Download and revise on any device — perfect for last-minute revision.</p>
+        <div class="cr-tags">
+          <span class="cr-tag">PDF Download</span>
+          <span class="cr-tag">Handwritten</span>
+          <span class="cr-tag">Molecular Updates</span>
+          <span class="cr-tag">System-wise</span>
+        </div>
+        <a href="https://www.elearningfrcpath.com/frcpath-part-1-notes-neet-ss" target="_blank" rel="noopener" class="cr-enrol-btn">Get Notes →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Section: Other -->
+  <div class="cr-section-head">
+    <h2>NEET-PG &amp; Free Resources</h2>
+    <p>Additional resources for NEET-PG aspirants and candidates exploring the platform.</p>
+  </div>
+  <div class="cr-grid">
+
+    <div class="cr-card">
+      <div class="cr-card-top">
+        <span class="cr-card-icon">🩺</span>
+        <span class="cr-badge cr-badge-neet">NEET-PG</span>
+        <h3 class="cr-card-name">NEET PG Pathology MCQs</h3>
+      </div>
+      <div class="cr-card-body">
+        <p class="cr-card-desc">Curated NEET PG Pathology MCQs with downloadable question sets and answer keys. Targeted for MD/DNB Pathology residents preparing for NEET-PG alongside FRCPath or NEET-SS.</p>
+        <div class="cr-tags">
+          <span class="cr-tag">Downloadable</span>
+          <span class="cr-tag">Answer Keys</span>
+          <span class="cr-tag">NEET-PG Pattern</span>
+        </div>
+        <a href="https://www.elearningfrcpath.com/neet-pg-pathology-mcq" target="_blank" rel="noopener" class="cr-enrol-btn">Access MCQs →</a>
+      </div>
+    </div>
+
+    <div class="cr-card">
+      <div class="cr-card-top">
+        <span class="cr-card-icon">🎁</span>
+        <span class="cr-badge cr-badge-free">Free</span>
+        <h3 class="cr-card-name">Free Demo Session</h3>
+      </div>
+      <div class="cr-card-body">
+        <p class="cr-card-desc">Free demo recordings for FRCPath Part 1 &amp; 2, NEET-SS, and INI-SS Pathology featuring real exam-oriented lectures. Experience our teaching style before you commit to a full course.</p>
+        <div class="cr-tags">
+          <span class="cr-tag">100% Free</span>
+          <span class="cr-tag">No Sign-up</span>
+          <span class="cr-tag">Exam-oriented</span>
+        </div>
+        <a href="https://www.elearningfrcpath.com/free-demo-session-frcpath-part-1" target="_blank" rel="noopener" class="cr-enrol-btn">Watch Free →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="cr-cta">
+    <div class="cr-cta-text">
+      <h3>Not sure which course is right for you?</h3>
+      <p>Email us at info@elearningfrcpath.in — we'll guide you to the right course based on your exam and timeline.</p>
+    </div>
+    <a href="mailto:info@elearningfrcpath.in" class="cr-cta-btn">✉️ Ask Us</a>
+  </div>
+
+</div>
+{{- end }}

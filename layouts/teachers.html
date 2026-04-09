@@ -1,0 +1,172 @@
+{{- define "main" }}
+<style>
+.tc-page { max-width: 960px; margin: 48px auto; padding: 0 28px; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; box-sizing:border-box; }
+@media(max-width:640px){ .tc-page{ padding:0 16px; margin:28px auto; } }
+
+.tc-hero { text-align:center; margin-bottom:52px; }
+.tc-label { display:inline-block; background:#e6fffa; color:#2c7a7b; font-size:0.76rem; font-weight:700; text-transform:uppercase; letter-spacing:.1em; padding:4px 14px; border-radius:20px; margin-bottom:12px; }
+[data-theme="dark"] .tc-label { background:#1e3a4a; color:#67e8f9; }
+.tc-hero h1 { font-size:clamp(1.8rem,3.5vw,2.5rem); font-weight:900; color:#1a365d; margin:0 0 12px; }
+[data-theme="dark"] .tc-hero h1 { color:#93c5fd; }
+.tc-hero p { font-size:1.02rem; color:#718096; max-width:620px; margin:0 auto; line-height:1.7; }
+[data-theme="dark"] .tc-hero p { color:#94a3b8; }
+
+/* Faculty cards */
+.tc-grid { display:grid; grid-template-columns:1fr 1fr; gap:32px; }
+@media(max-width:700px){ .tc-grid{ grid-template-columns:1fr; gap:24px; } }
+
+.tc-card { background:#fff; border:1px solid #e2e8f0; border-radius:16px; overflow:hidden; box-shadow:0 2px 16px rgba(26,54,93,.07); }
+[data-theme="dark"] .tc-card { background:#1e293b; border-color:#334155; }
+
+.tc-card-header { background:linear-gradient(135deg,#1a365d 0%,#2b4c7e 60%,#319795 100%); padding:28px 24px 20px; text-align:center; }
+.tc-avatar { width:80px; height:80px; border-radius:50%; background:rgba(255,255,255,.18); border:3px solid rgba(255,255,255,.35); margin:0 auto 12px; display:flex; align-items:center; justify-content:center; font-size:2rem; font-weight:900; color:#fff; }
+.tc-name { font-size:1.2rem; font-weight:800; color:#fff; margin:0 0 4px; }
+.tc-qual { font-size:0.82rem; color:rgba(255,255,255,.78); font-weight:600; margin:0 0 10px; }
+.tc-role-badge { display:inline-block; background:rgba(255,255,255,.15); border:1px solid rgba(255,255,255,.25); color:#81e6d9; font-size:0.74rem; font-weight:700; padding:3px 12px; border-radius:20px; }
+
+.tc-card-body { padding:22px 24px 24px; }
+
+.tc-bio { font-size:0.92rem; color:#4a5568; line-height:1.7; margin:0 0 20px; }
+[data-theme="dark"] .tc-bio { color:#94a3b8; }
+
+.tc-section-label { font-size:0.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.09em; color:#319795; margin:0 0 8px; }
+.tc-list { list-style:none; padding:0; margin:0 0 18px; }
+.tc-list li { font-size:0.88rem; color:#2d3748; padding:4px 0 4px 20px; position:relative; line-height:1.5; }
+[data-theme="dark"] .tc-list li { color:#cbd5e1; }
+.tc-list li::before { content:'▶'; position:absolute; left:0; top:5px; color:#319795; font-size:0.55rem; }
+
+.tc-awards { display:flex; flex-direction:column; gap:8px; margin-bottom:18px; }
+.tc-award { display:flex; align-items:flex-start; gap:8px; background:#f0fff4; border-radius:8px; padding:8px 12px; }
+[data-theme="dark"] .tc-award { background:#14532d33; }
+.tc-award-icon { font-size:1rem; flex-shrink:0; }
+.tc-award-text { font-size:0.83rem; color:#276749; line-height:1.4; }
+[data-theme="dark"] .tc-award-text { color:#86efac; }
+
+.tc-courses-link { display:block; text-align:center; margin-top:4px; padding:10px 18px; background:linear-gradient(135deg,#1a365d,#319795); color:#fff; border-radius:8px; font-size:0.88rem; font-weight:700; text-decoration:none; transition:opacity .15s; }
+.tc-courses-link:hover { opacity:.88; }
+
+/* Philosophy section */
+.tc-philosophy { margin-top:52px; background:linear-gradient(135deg,#1a365d 0%,#319795 100%); border-radius:16px; padding:36px 32px; display:grid; grid-template-columns:1fr 1fr; gap:32px; align-items:center; }
+@media(max-width:640px){ .tc-philosophy{ grid-template-columns:1fr; gap:20px; padding:28px 22px; } }
+.tc-ph-title { font-size:1.3rem; font-weight:800; color:#fff; margin:0 0 12px; }
+.tc-ph-text { font-size:0.93rem; color:rgba(255,255,255,.83); line-height:1.7; margin:0; }
+.tc-ph-stats { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.tc-ph-stat { background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18); border-radius:12px; padding:16px; text-align:center; }
+.tc-ph-num { font-size:2rem; font-weight:900; color:#fff; line-height:1; }
+.tc-ph-num span { color:#81e6d9; }
+.tc-ph-lbl { font-size:0.78rem; color:rgba(255,255,255,.65); margin-top:4px; }
+</style>
+
+<div class="tc-page">
+
+  <div class="tc-hero">
+    <span class="tc-label">Meet the Faculty</span>
+    <h1>Taught by Pathologists Who've Been There</h1>
+    <p>Our 2 MD FRCPath-qualified faculty members cleared FRCPath without formal coaching. They built this platform so you don't have to figure it out alone.</p>
+  </div>
+
+  <div class="tc-grid">
+
+    <!-- Dr. Maitrayee Roy -->
+    <div class="tc-card">
+      <div class="tc-card-header">
+        <div class="tc-avatar">MR</div>
+        <div class="tc-name">Dr. Maitrayee Roy</div>
+        <div class="tc-qual">MD Pathology &nbsp;·&nbsp; FRCPath (Histopathology)</div>
+        <span class="tc-role-badge">Director &amp; Founder</span>
+      </div>
+      <div class="tc-card-body">
+        <p class="tc-bio">Dr. Maitrayee Roy is the founder of AM Path E-Learning Private Limited. She cleared FRCPath without formal coaching and built ElearningFRCPath so that no pathology resident has to navigate this journey without expert guidance. She brings over a decade of diagnostic histopathology experience to every lecture.</p>
+
+        <div class="tc-section-label">Education</div>
+        <ul class="tc-list">
+          <li>MBBS — Manipal College of Medical Sciences (Best Outgoing Student, 2009)</li>
+          <li>MD Pathology — JNMC Belgaum (Gold Medal, Ranked 1st, 2013)</li>
+          <li>Senior Residency — AIIMS New Delhi</li>
+          <li>Fellow of the Royal College of Pathologists (FRCPath), 2019</li>
+        </ul>
+
+        <div class="tc-awards">
+          <div class="tc-award"><span class="tc-award-icon">🥇</span><span class="tc-award-text">Gold Medal — MD Pathology, JNMC Belgaum (Ranked 1st)</span></div>
+          <div class="tc-award"><span class="tc-award-icon">🏅</span><span class="tc-award-text">Best Outgoing Student — MBBS, Manipal (2009)</span></div>
+          <div class="tc-award"><span class="tc-award-icon">🏆</span><span class="tc-award-text">Dr. N.C. Nayak Best Senior Resident Award — AIIMS New Delhi (2015–16)</span></div>
+        </div>
+
+        <div class="tc-section-label">Areas of Expertise</div>
+        <ul class="tc-list">
+          <li>Histopathology &amp; Haematopathology</li>
+          <li>Applied Histology &amp; Diagnostic Reasoning</li>
+          <li>Organ-specific tissue interpretation</li>
+          <li>FRCPath exam strategy &amp; pattern recognition</li>
+        </ul>
+
+        <a href="https://www.elearningfrcpath.com/frcpath-part-1-histopathology-course" target="_blank" rel="noopener" class="tc-courses-link">View Dr. Roy's Courses →</a>
+      </div>
+    </div>
+
+    <!-- Dr. Akshay Bali -->
+    <div class="tc-card">
+      <div class="tc-card-header">
+        <div class="tc-avatar">AB</div>
+        <div class="tc-name">Dr. Akshay Bali</div>
+        <div class="tc-qual">MD Pathology &nbsp;·&nbsp; DipRCPath (Histopathology)</div>
+        <span class="tc-role-badge">Director &amp; Pathology Faculty</span>
+      </div>
+      <div class="tc-card-body">
+        <p class="tc-bio">Dr. Akshay Bali co-directs ElearningFRCPath and contributes as faculty across histopathology and haematopathology modules. With extensive lab and diagnostic experience across national institutions and his own diagnostic lab, he brings a strong clinical perspective to academic teaching.</p>
+
+        <div class="tc-section-label">Education</div>
+        <ul class="tc-list">
+          <li>MBBS — Vinayaka Mission's Medical College, Puducherry (Gold Medal in Pathology, Pondicherry University)</li>
+          <li>MD Pathology — JNMC Belgaum (2013)</li>
+          <li>Diplomate of the Royal College of Pathologists (DipRCPath), 2019</li>
+        </ul>
+
+        <div class="tc-awards">
+          <div class="tc-award"><span class="tc-award-icon">🥇</span><span class="tc-award-text">Gold Medal in Pathology — MBBS, Pondicherry University</span></div>
+          <div class="tc-award"><span class="tc-award-icon">🔬</span><span class="tc-award-text">Previously associated with Dr. Lal Path Labs (until 2016)</span></div>
+          <div class="tc-award"><span class="tc-award-icon">🏥</span><span class="tc-award-text">Co-manages Maitri Diagnostic Laboratory, Ambala City (since 2016)</span></div>
+        </div>
+
+        <div class="tc-section-label">Areas of Expertise</div>
+        <ul class="tc-list">
+          <li>Histopathology &amp; Haematopathology</li>
+          <li>Chemical Pathology</li>
+          <li>Clinical Governance &amp; Lab Management</li>
+          <li>Forensic Medicine &amp; Applied Pathology</li>
+        </ul>
+
+        <a href="https://www.elearningfrcpath.com/frcpath-part-1-histopathology-course" target="_blank" rel="noopener" class="tc-courses-link">View Dr. Bali's Courses →</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Philosophy -->
+  <div class="tc-philosophy">
+    <div>
+      <h3 class="tc-ph-title">Why This Platform Exists</h3>
+      <p class="tc-ph-text">Dr. Maitrayee Roy cleared FRCPath Part 1 and Part 2 without any formal coaching — by building her own system from scratch. After seeing how many residents struggled with finding structured, reliable resources, she founded ElearningFRCPath. The philosophy is simple: concept-first, exam-relevant, no fluff. Both faculty bring the same standard to every lecture they record.</p>
+    </div>
+    <div class="tc-ph-stats">
+      <div class="tc-ph-stat">
+        <div class="tc-ph-num">126<span>+</span></div>
+        <div class="tc-ph-lbl">Postgraduates Enrolled</div>
+      </div>
+      <div class="tc-ph-stat">
+        <div class="tc-ph-num">2</div>
+        <div class="tc-ph-lbl">MD FRCPath Faculty</div>
+      </div>
+      <div class="tc-ph-stat">
+        <div class="tc-ph-num">800<span>+</span></div>
+        <div class="tc-ph-lbl">MCQs Available</div>
+      </div>
+      <div class="tc-ph-stat">
+        <div class="tc-ph-num">3</div>
+        <div class="tc-ph-lbl">Exams Covered</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+{{- end }}
