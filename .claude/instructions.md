@@ -22,7 +22,7 @@ The live sitemap is always at: `https://elearningfrcpath.in/sitemap.xml`
 3. Ensure `slug:` is set in front matter for clean URLs (blog posts)
 4. No manual sitemap editing needed — Hugo rebuilds it automatically on push
 
-### Current pages in sitemap (as of 2026-04-09):
+### Current pages in sitemap (as of 2026-04-10):
 | URL | Type | Layout |
 |---|---|---|
 | `/` | Home | `layouts/index.html` |
@@ -36,6 +36,7 @@ The live sitemap is always at: `https://elearningfrcpath.in/sitemap.xml`
 | `/blog/who-5th-edition-npm1-mutated-aml-without-20-percent-blasts/` | Blog post | default single |
 | `/blog/mismatch-repair-deficiency-pathology-frcpath-neet-ss/` | Blog post | default single |
 | `/blog/who-5th-edition-renal-cell-carcinoma-new-entities-frcpath-neet-ss/` | Blog post | default single |
+| `/blog/ai-digital-pathology-neet-ss-frcpath-2026/` | Blog post | default single |
 
 ### When you add a new page — update this table above.
 
