@@ -38,6 +38,7 @@ The live sitemap is always at: `https://elearningfrcpath.in/sitemap.xml`
 | `/blog/who-5th-edition-renal-cell-carcinoma-new-entities-frcpath-neet-ss/` | Blog post | default single |
 | `/blog/ai-digital-pathology-neet-ss-frcpath-2026/` | Blog post | default single |
 | `/blog/neet-ss-2025-results-trends-frcpath-prep-strategy-2026/` | Blog post | default single |
+| `/blog/neet-ss-2026-section-based-pattern-frcpath-prep-strategy/` | Blog post | default single |
 
 ### When you add a new page — update this table above.
 
