@@ -42,6 +42,7 @@ The live sitemap is always at: `https://elearningfrcpath.in/sitemap.xml`
 | `/blog/neet-ss-vs-neet-ini-ss-2026-pathology-entrance-comparison/` | Blog post | default single |
 | `/blog/her2-low-ultralow-breast-cancer-pathology-frcpath-neet-ss-2026/` | Blog post | default single |
 | `/blog/digital-pathology-ai-image-mcqs-neet-ss-frcpath-2026/` | Blog post | default single |
+| `/blog/case-based-digital-pathology-training-neet-ss-frcpath-2026/` | Blog post | default single |
 
 ### When you add a new page — update this table above.
 
