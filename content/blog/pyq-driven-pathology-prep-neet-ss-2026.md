@@ -1,6 +1,6 @@
 ---
 title: "PYQ-Driven Pathology Prep For NEET-SS 2026: From Reading Everything To Only What Appears"
-date: 2025-01-15
+date: 2026-05-02
 draft: false
 slug: "pyq-driven-pathology-prep-neet-ss-2026"
 description: "Master NEET-SS 2026 Pathology in 30-45 days using PYQ-driven strategy. Learn how to cut low-yield topics, build topic-frequency matrices, and focus on high-yield oncopath and image-based questions."
@@ -359,8 +359,8 @@ Cover image: [Unsplash](https://images.unsplash.com/photo-1532187863486-abf9dbad
       "url": "https://elearningfrcpath.in/favicon.ico"
     }
   },
-  "datePublished": "2025-04-15",
-  "dateModified": "2025-04-15"
+  "datePublished": "2026-05-02",
+  "dateModified": "2026-05-02"
 }
 </script>
 
