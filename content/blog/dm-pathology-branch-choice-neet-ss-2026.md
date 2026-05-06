@@ -1,9 +1,19 @@
-# DM Oncopathology vs DM Hematopathology vs DM Cytopathology: How to Choose Your NEET‑SS 2026 Pathology Branch Without Regret
-
-**Meta Description:** Choosing between DM Oncopathology, Hematopathology, or Cytopathology after NEET‑SS 2026? Learn which branch matches your personality, career goals, and exam strengths—plus how each shapes your super‑specialty future.
-
-**Keywords:** DM Oncopathology vs Hematopathology, NEET‑SS 2026 pathology branches, DM Cytopathology career, pathology super‑specialty choice, NEET‑SS branch selection, oncopath vs hematopath, pathology DM counselling 2026
-
+---
+title: "DM Oncopathology vs DM Hematopathology vs DM Cytopathology: How to Choose Your NEET‑SS 2026 Pathology Branch Without Regret"
+date: 2026-05-06
+draft: false
+slug: "dm-pathology-branch-choice-neet-ss-2026"
+description: "Choosing between DM Oncopathology, Hematopathology, or Cytopathology after NEET‑SS 2026? Learn which branch matches your personality, career goals, and exam strengths—plus how each shapes your super‑specialty future."
+tags: ["NEET-SS 2026", "DM Oncopathology", "DM Hematopathology", "DM Cytopathology", "branch selection", "career guidance", "super-specialty", "pathology counselling"]
+categories: ["Career Guidance", "Branch Selection", "NEET-SS Counselling"]
+keywords: ["DM Oncopathology vs Hematopathology", "NEET SS 2026 pathology branches", "DM Cytopathology career", "pathology super specialty choice", "NEET SS branch selection", "oncopath vs hematopath", "pathology DM counselling 2026", "how to choose pathology branch"]
+author: "eLearning FRCPath Team"
+cover:
+  image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop&q=80"
+  alt: "Medical professional making career decision between different pathology specializations"
+  caption: "Image credit: Unsplash — Free to use under Unsplash License"
+schema:
+  type: "Article"
 ---
 
 By 2026, NEET‑SS‑style pathology aspirants aren't just fighting for a super‑specialty seat; they're choosing between **three distinct DM‑level paths**—Oncopathology, Hematopathology, and Cytopathology—with very different day‑to‑day work, exam‑style patterns, and career trajectories.
