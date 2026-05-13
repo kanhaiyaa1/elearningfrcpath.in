@@ -1,6 +1,6 @@
 ---
 title: "Micro-Learning & Tiny-Target Practice for NEET-SS 2026 Pathology"
-date: 2025-04-15
+date: 2026-04-28
 draft: false
 slug: "micro-learning-tiny-target-practice-neet-ss-pathology-2026"
 description: "Transform NEET-SS 2026 Pathology prep with 10-minute daily drills. Complete 30-day micro-learning plan with concrete oncopath, hematopath, and cytology examples for fast pattern recognition."
@@ -344,8 +344,8 @@ Cover image: [Unsplash](https://unsplash.com/photos/person-writing-bucket-list-o
       "url": "https://elearningfrcpath.in/favicon.ico"
     }
   },
-  "datePublished": "2025-04-15",
-  "dateModified": "2025-04-15"
+  "datePublished": "2026-04-28",
+  "dateModified": "2026-04-28"
 }
 </script>
 
