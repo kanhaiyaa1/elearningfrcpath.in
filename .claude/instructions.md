@@ -45,6 +45,7 @@ The live sitemap is always at: `https://elearningfrcpath.in/sitemap.xml`
 | `/blog/case-based-digital-pathology-training-neet-ss-frcpath-2026/` | Blog post | default single |
 | `/blog/ai-case-based-learning-pathology-neet-ss-frcpath-2026/` | Blog post | default single |
 | `/blog/neet-ss-2026-section-wise-time-management-strategy/` | Blog post | default single |
+| `/blog/neet-ss-2026-non-content-skills-reading-pacing-pattern/` | Blog post | default single |
 
 ### When you add a new page — update this table above.
 
