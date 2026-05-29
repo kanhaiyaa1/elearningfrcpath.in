@@ -48,6 +48,7 @@ The live sitemap is always at: `https://elearningfrcpath.in/sitemap.xml`
 | `/blog/neet-ss-2026-non-content-skills-reading-pacing-pattern/` | Blog post | default single |
 | `/blog/neet-ss-2026-stopping-camera-strategy-when-to-guess/` | Blog post | default single |
 | `/blog/frcpath-spring-2026-results-student-success-stories/` | Blog post | default single |
+| `/blog/molecular-markers-oncopath-neet-ss-frcpath-2026/` | Blog post | default single |
 
 ### When you add a new page — update this table above.
 
