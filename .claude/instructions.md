@@ -50,6 +50,7 @@ The live sitemap is always at: `https://elearningfrcpath.in/sitemap.xml`
 | `/blog/frcpath-spring-2026-results-student-success-stories/` | Blog post | default single |
 | `/blog/molecular-markers-oncopath-neet-ss-frcpath-2026/` | Blog post | default single |
 | `/blog/rna-fusion-genes-rare-disease-neet-ss-frcpath-2026/` | Blog post | default single |
+| `/blog/frcpath-autumn-2026-application-neet-ss-dual-plan/` | Blog post | default single |
 
 ### When you add a new page — update this table above.
 
