@@ -1,6 +1,6 @@
 ---
 title: "NEET PG Pathology High-Yield Topics 2026: What to Study First"
-date: 2025-12-30
+date: 2026-06-03
 draft: false
 slug: "neet-pg-pathology-high-yield-topics-2026"
 description: "Complete high-yield topic list for NEET PG Pathology 2026. Chapter-wise priority guide covering General Pathology, Systemic Pathology, Hematology, and MCQ strategies."
@@ -345,8 +345,8 @@ Cover image: [Unsplash](https://unsplash.com/photos/person-in-white-coat-studyin
       "@type": "Article",
       "headline": "NEET PG Pathology High-Yield Topics 2026: What to Study First",
       "description": "Complete high-yield topic list for NEET PG Pathology 2026. Chapter-wise priority guide covering General Pathology, Systemic Pathology, Hematology, and MCQ strategies.",
-      "datePublished": "2025-12-30",
-      "dateModified": "2025-12-30",
+      "datePublished": "2026-06-03",
+      "dateModified": "2026-06-03",
       "author": {
         "@type": "Organization",
         "name": "eLearning FRCPath Team",

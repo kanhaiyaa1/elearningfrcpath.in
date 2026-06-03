@@ -1,6 +1,6 @@
 ---
 title: "NEET SS 2025 Counselling: Complete Schedule, Dates & What to Expect"
-date: 2025-12-30
+date: 2026-06-03
 draft: false
 slug: "neet-ss-2025-counselling-schedule-dates"
 description: "Complete guide to NEET SS 2025 counselling — schedule, seat matrix, document checklist, expected cutoffs for pathology, and what the Supreme Court delay means for you."
@@ -269,8 +269,8 @@ Cover image: [Unsplash](https://unsplash.com/photos/person-signing-document-1450
       "@type": "Article",
       "headline": "NEET SS 2025 Counselling: Complete Schedule, Dates & What to Expect",
       "description": "Complete guide to NEET SS 2025 counselling — schedule, seat matrix, document checklist, expected cutoffs for pathology, and what the Supreme Court delay means for you.",
-      "datePublished": "2025-12-30",
-      "dateModified": "2025-12-30",
+      "datePublished": "2026-06-03",
+      "dateModified": "2026-06-03",
       "author": {
         "@type": "Organization",
         "name": "eLearning FRCPath Team",
