@@ -54,6 +54,7 @@ The live sitemap is always at: `https://elearningfrcpath.in/sitemap.xml`
 | `/blog/neet-ss-2025-counselling-schedule-dates/` | Blog post | default single |
 | `/blog/neet-pg-pathology-high-yield-topics-2026/` | Blog post | default single |
 | `/blog/frcpath-exam-strategy-guide-part1-part2/` | Blog post | default single |
+| `/blog/ini-ss-pathology-2026-guide/` | Blog post | default single |
 
 ### When you add a new page — update this table above.
 
