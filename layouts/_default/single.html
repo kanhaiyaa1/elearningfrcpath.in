@@ -1,0 +1,175 @@
+{{- define "main" }}
+
+<article class="post-single">
+
+  {{/* ─ Reading Progress Bar ─ */}}
+  <div class="reading-progress"></div>
+
+  {{/* ─ Post Header ─ */}}
+  <header class="post-header">
+    {{- if .Params.categories }}
+      <div class="post-breadcrumb">
+        <a href="/blog/">Blog</a>
+        {{- range .Params.categories }}
+          <span class="separator">/</span>
+          <span>{{ . }}</span>
+        {{- end }}
+      </div>
+    {{- end }}
+
+    <h1 class="post-title">{{ .Title }}</h1>
+
+    <div class="post-meta">
+      {{- if .Params.author }}
+        <span class="post-author">By {{ .Params.author }}</span>
+      {{- end }}
+      {{- if .PublishDate }}
+        <span class="post-date">{{ .PublishDate.Format "Jan 2, 2006" }}</span>
+      {{- end }}
+      {{- if .ReadingTime }}
+        <span class="post-reading-time">{{ .ReadingTime }} min read</span>
+      {{- end }}
+    </div>
+
+    {{- if .Params.cover.image }}
+      <div class="post-cover">
+        <img src="{{ .Params.cover.image }}" alt="{{ .Params.cover.alt }}" loading="lazy">
+        {{- if .Params.cover.caption }}
+          <p class="post-cover-caption">{{ .Params.cover.caption }}</p>
+        {{- end }}
+      </div>
+    {{- end }}
+  </header>
+
+  <div class="post-content-wrapper">
+    {{/* ─ Table of Contents Sidebar ─ */}}
+    <aside class="post-toc-sidebar" id="toc-sidebar">
+      <div class="toc-container">
+        <div class="toc-title">Table of Contents</div>
+        <nav id="TableOfContents" class="toc-nav">
+          {{ .TableOfContents }}
+        </nav>
+      </div>
+    </aside>
+
+    {{/* ─ Main Content ─ */}}
+    <div class="post-content">
+      {{ .Content }}
+    </div>
+  </div>
+
+  {{/* ─ Post Footer ─ */}}
+  <footer class="post-footer">
+    {{- if .Params.tags }}
+      <div class="post-tags">
+        {{- range .Params.tags }}
+          <a href="/tags/{{ . | urlize }}/">{{ . }}</a>
+        {{- end }}
+      </div>
+    {{- end }}
+
+    {{- if .Site.Params.showShareButtons }}
+      <div class="post-share">
+        <span class="share-label">Share:</span>
+        <a href="https://twitter.com/intent/tweet?url={{ .Permalink }}&text={{ .Title }}" class="share-btn twitter" title="Share on Twitter" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" class="share-btn linkedin" title="Share on LinkedIn" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" class="share-btn facebook" title="Share on Facebook" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a6 6 0 00-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a2 2 0 012-2h3z"></path></svg>
+        </a>
+      </div>
+    {{- end }}
+  </footer>
+
+  {{/* ─ Related Posts Section ─ */}}
+  {{- if (gt (len .Site.RegularPages) 1) }}
+    <section class="post-related">
+      <h3>Related Articles</h3>
+      <div class="related-grid">
+        {{- range (first 3 (where .Site.RegularPages "Type" "blog")) }}
+          {{- if ne .Permalink $.Permalink }}
+            <article class="related-card">
+              <a href="{{ .Permalink }}" class="related-link">
+                {{- if .Params.cover.image }}
+                  <img src="{{ .Params.cover.image }}" alt="{{ .Params.cover.alt }}" loading="lazy" class="related-image">
+                {{- end }}
+                <h4>{{ .Title }}</h4>
+                <p class="related-meta">{{ .ReadingTime }} min read • {{ .PublishDate.Format "Jan 2, 2006" }}</p>
+              </a>
+            </article>
+          {{- end }}
+        {{- end }}
+      </div>
+    </section>
+  {{- end }}
+
+  {{/* ─ Navigation Links ─ */}}
+  <nav class="post-nav">
+    <a href="/blog/" class="nav-link back-link">← Back to Blog</a>
+  </nav>
+
+</article>
+
+<script>
+  // Reading Progress Bar
+  window.addEventListener('scroll', function() {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    document.querySelector('.reading-progress').style.width = scrollPercent + '%';
+  });
+
+  // Smooth scroll for TOC links
+  document.querySelectorAll('.toc-nav a').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth' });
+        setTimeout(() => {
+          window.history.pushState(null, null, this.getAttribute('href'));
+        }, 300);
+      }
+    });
+  });
+
+  // Highlight active TOC item while scrolling
+  const headings = document.querySelectorAll('.post-content h2, .post-content h3');
+  const tocLinks = document.querySelectorAll('.toc-nav a');
+
+  window.addEventListener('scroll', function() {
+    let currentHeading = null;
+    headings.forEach(heading => {
+      if (heading.getBoundingClientRect().top < 100) {
+        currentHeading = heading;
+      }
+    });
+
+    tocLinks.forEach(link => {
+      link.classList.remove('active');
+      if (currentHeading) {
+        const href = link.getAttribute('href');
+        if (href === '#' + currentHeading.id) {
+          link.classList.add('active');
+        }
+      }
+    });
+  });
+
+  // Add IDs to headings if they don't have them (for TOC linking)
+  let h2Counter = 0, h3Counter = 0;
+  document.querySelectorAll('.post-content h2, .post-content h3').forEach(heading => {
+    if (!heading.id) {
+      if (heading.tagName === 'H2') {
+        heading.id = 'heading-' + (++h2Counter);
+      } else {
+        heading.id = 'heading-' + h2Counter + '-' + (++h3Counter);
+      }
+    }
+  });
+</script>
+
+{{- end }}
