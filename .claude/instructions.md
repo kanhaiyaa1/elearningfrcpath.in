@@ -56,6 +56,7 @@ The live sitemap is always at: `https://elearningfrcpath.in/sitemap.xml`
 | `/blog/frcpath-exam-strategy-guide-part1-part2/` | Blog post | default single |
 | `/blog/ini-ss-pathology-2026-guide/` | Blog post | default single |
 | `/blog/frcpath-part1-autumn-2026-application-india/` | Blog post | default single |
+| `/blog/molecular-clinical-integration-pathology-neet-ss-frcpath-2026/` | Blog post | default single |
 
 ### When you add a new page — update this table above.
 
