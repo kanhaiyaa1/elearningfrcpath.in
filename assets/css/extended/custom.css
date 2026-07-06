@@ -156,31 +156,25 @@ footer {
   color: #94a3b8;
 }
 
-/* ── Content Wrapper (with TOC sidebar) ────────────────────────── */
+/* ── Content Wrapper (full-width, TOC moved above) ──────────────── */
 .post-content-wrapper {
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 40px;
-  align-items: start;
-  max-width: 1140px;
+  max-width: 860px;
   margin: 0 auto;
   width: 100%;
 }
 
-/* ── Table of Contents Sidebar ──────────────────────────────────── */
-.post-toc-sidebar {
-  position: sticky;
-  top: 90px;
-  height: fit-content;
-  max-height: calc(100vh - 120px);
-  overflow-y: auto;
-  padding: 20px;
+/* ── Table of Contents Block (full-width, above content) ────────── */
+.post-toc-block {
+  max-width: 1140px;
+  margin: 0 auto 32px;
+  width: 100%;
+  padding: 20px 24px;
   background: #f7f8fa;
   border-radius: 8px;
   border: 1px solid #e2e8f0;
 }
 
-[data-theme="dark"] .post-toc-sidebar {
+[data-theme="dark"] .post-toc-block {
   background: #1e293b;
   border-color: #334155;
 }
@@ -189,6 +183,19 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 12px;
+}
+
+.toc-nav ul {
+  column-count: 3;
+  column-gap: 24px;
+}
+
+@media (max-width: 900px) {
+  .toc-nav ul { column-count: 2; }
+}
+
+@media (max-width: 600px) {
+  .toc-nav ul { column-count: 1; }
 }
 
 .toc-title {
@@ -834,14 +841,7 @@ footer {
 
 /* Tablets (1024px and below) */
 @media (max-width: 1024px) {
-  .post-content-wrapper {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
-  .post-toc-sidebar {
-    position: static;
-    max-height: none;
+  .post-toc-block {
     margin-bottom: 20px;
   }
 }
@@ -878,25 +878,18 @@ footer {
     font-size: 0.83rem;
   }
 
-  .post-toc-sidebar {
+  .post-toc-block {
     background: transparent;
     border: none;
     padding: 0 0 20px 0;
   }
 
-  .toc-container {
-    display: none;
-  }
-
   .toc-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   .toc-nav ul {
-    display: contents;
+    column-count: 1;
   }
 
   .toc-nav li {
@@ -940,10 +933,6 @@ footer {
     flex-direction: column;
     align-items: flex-start;
     gap: 4px !important;
-  }
-
-  .post-content-wrapper {
-    gap: 16px;
   }
 
   .post-content h2 {

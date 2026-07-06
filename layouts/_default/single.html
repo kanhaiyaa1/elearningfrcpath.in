@@ -41,18 +41,18 @@
     {{- end }}
   </header>
 
-  <div class="post-content-wrapper">
-    {{/* ─ Table of Contents Sidebar ─ */}}
-    <aside class="post-toc-sidebar" id="toc-sidebar">
-      <div class="toc-container">
-        <div class="toc-title">Table of Contents</div>
-        <nav id="TableOfContents" class="toc-nav">
-          {{ .TableOfContents }}
-        </nav>
-      </div>
-    </aside>
+  {{/* ─ Table of Contents (full-width, above content) ─ */}}
+  <aside class="post-toc-block" id="toc-sidebar">
+    <div class="toc-container">
+      <div class="toc-title">Table of Contents</div>
+      <nav id="TableOfContents" class="toc-nav">
+        {{ .TableOfContents }}
+      </nav>
+    </div>
+  </aside>
 
-    {{/* ─ Main Content ─ */}}
+  {{/* ─ Main Content ─ */}}
+  <div class="post-content-wrapper">
     <div class="post-content">
       {{ .Content }}
     </div>
