@@ -3,10 +3,10 @@ title: "FRCPath Exam 2025–2026: Complete Strategy Guide for Part 1 & Part 2"
 date: 2026-06-05
 draft: false
 slug: "frcpath-exam-strategy-guide-part1-part2"
-description: "Complete FRCPath exam guide — eligibility, syllabus, Part 1 MCQ strategy, Part 2 written/practical tips, study resources, and passing rates. Built for international and Indian pathologists."
+description: "Complete FRCPath exam guide — eligibility, syllabus, Part 1 MCQ strategy, Part 2 practical exam (long cases, short cases, cytology, macros, frozen sections, OSPE) strategy, study resources, and passing rates. Built for international and Indian pathologists."
 tags: ["FRCPath", "FRCPath Part 1", "FRCPath Part 2", "UK Pathology Exam", "Histopathology", "Royal College of Pathologists"]
 categories: ["FRCPath"]
-keywords: ["FRCPath exam strategy 2025 2026", "FRCPath Part 1 MCQ tips histopathology", "FRCPath Part 2 OSPE written paper strategy", "how to pass FRCPath Part 1", "FRCPath international candidates India", "Royal College of Pathologists exam guide", "FRCPath syllabus histopathology 2026"]
+keywords: ["FRCPath exam strategy 2025 2026", "FRCPath Part 1 MCQ tips histopathology", "FRCPath Part 2 practical exam long cases OSPE strategy", "how to pass FRCPath Part 1", "FRCPath international candidates India", "Royal College of Pathologists exam guide", "FRCPath syllabus histopathology 2026"]
 author: "eLearning FRCPath Team"
 cover:
   image: "https://images.unsplash.com/photo-1532094349884-543559c7d254?w=1200"
@@ -41,8 +41,8 @@ This guide focuses on **Histopathology FRCPath** — the pathway most relevant t
 
 | Exam | Format | Typical Sitting Point |
 |---|---|---|
-| **Part 1** | MCQs — Best of 5 + Extended Matching Questions | After ~2 years of ST-level training |
-| **Part 2** | Written Papers (SAQs + Essays) + Practical OSPE | After ~4–5 years of ST-level training |
+| **Part 1** | MCQs — Single Best Answer (SBA) + Extended Matching Questions (EMQ) | UK trainees: normally Stage B of training |
+| **Part 2** | Entirely practical — 6 assessed sections over 2 exam days (no written SAQ/essay papers) | UK trainees: not before Stage C, and not less than 12 months after passing Part 1 |
 
 Both parts are conducted **twice per year**, with sittings typically in **May/June** and **October/November**. Applications open approximately 3 months before the exam date. For the Autumn 2026 sitting specifically, [the application window and deadline details are covered in a dedicated post](https://elearningfrcpath.in/blog/frcpath-autumn-2026-application-neet-ss-dual-plan/) — including the critical fact that Autumn 2026 is the last sitting in the current format before Spring 2027 brings a new examination structure.
 
@@ -52,9 +52,7 @@ Both parts are conducted **twice per year**, with sittings typically in **May/Ju
 
 ### Exam Format
 
-- **Paper 1:** 90 Best-of-5 MCQs — 2.5 hours (100 seconds per question)
-- **Paper 2:** 60 Extended Matching Questions (EMQs) — 2.5 hours (~2.5 minutes per stem group)
-- Total: 150 questions across a single exam day
+- **125 questions total** — a mix of Single Best Answer (SBA) and Extended Matching Questions (EMQ) — sat as a **single 3-hour paper** (per RCPath's current Histopathology examination regulations; always confirm the exact question split for your sitting via the College's own guidance)
 - **Pass mark:** approximately 60–65%, set by the borderline group method (varies each sitting — there is no fixed percentage cutoff)
 - **No negative marking** — every unanswered question is a lost opportunity
 
@@ -91,9 +89,9 @@ The borderline group method means the pass mark is recalculated each sitting bas
 
 ## FRCPath Part 1 MCQ Strategy
 
-### Best-of-5 (BOF) Approach
+### Single Best Answer (SBA / "Best-of-5") Approach
 
-The BOF format presents a clinical or histological scenario and asks you to select the single best answer from five options. Two options are usually clearly wrong — eliminate these first. The remaining three are where your preparation is tested: often one is a plausible distractor (a related concept, slightly wrong detail, or correct answer for a different disease), one is partially correct, and one is definitively correct.
+RCPath's current terminology is Single Best Answer (SBA); many candidates and older resources still call this format "Best-of-5" or "BOF" — they refer to the same question type. The format presents a clinical or histological scenario and asks you to select the single best answer from five options. Two options are usually clearly wrong — eliminate these first. The remaining three are where your preparation is tested: often one is a plausible distractor (a related concept, slightly wrong detail, or correct answer for a different disease), one is partially correct, and one is definitively correct.
 
 **Elimination first, selection second.** Reading all five options before committing reduces the error rate from gut-response answering.
 
@@ -121,8 +119,8 @@ Commonly tested images: Reed-Sternberg cells, Auer rods, signet ring cells, psam
 
 ### Time Management
 
-- BOF: 90 questions in 150 minutes = 100 seconds per question
-- EMQ: 60 stems in 150 minutes, but stems come in groups — allocate ~12 minutes per group of 4–6 stems
+- 125 questions in 3 hours = roughly 85–90 seconds per question on average — pace yourself against the clock rather than against any single hard question
+- EMQ stems come in groups sharing one option list — read the option list once, then work through its stems as a block rather than re-scanning options each time
 - Flag difficult questions and move — returning to a flagged question fresh is more efficient than staring at it
 - Reserve the final 10 minutes to review flagged questions and ensure no blanks
 
@@ -132,39 +130,40 @@ Commonly tested images: Reed-Sternberg cells, Auer rods, signet ring cells, psam
 
 ## FRCPath Part 2: Histopathology — In Depth
 
-### Format (Current 2024–2025 Structure)
+### Format (Per RCPath 2026 Histopathology Examination Regulations)
 
-| Component | Format | Duration |
-|---|---|---|
-| Written Paper 1 | Short Answer Questions (SAQs) | 3 hours |
-| Written Paper 2 | Extended Essays / Problem-solving | 3 hours |
-| Practical (OSPE) | Microscopy + grossing + IHC + ancillary data stations | Half day |
+**Part 2 Histopathology is entirely practical — there are no written SAQ or essay papers.** The exam takes place over **2 days** within the examination period, and covers interpreting and writing reports on histopathological slides and non-gynaecological cytopathology. Candidates are assessed in **6 sections**, each marked separately against an agreed specimen answer and given an individual pass/fail:
 
-### Written Paper Strategy
+| Section | What It Assesses |
+|---|---|
+| Long cases | Full case work-up on a small number of complex specimens — slides, clinical history, report writing |
+| Short surgical cases (surgical histology) | Rapid slide interpretation and reporting across a larger number of routine surgical specimens |
+| Cytopathology | Non-gynaecological cytopathology — interpretation and reporting |
+| Macros | Gross/macroscopic description and cut-up of surgical specimens |
+| Frozen sections | Rapid intraoperative diagnosis under time pressure |
+| OSPE (Objective Structured Practical Examination) | Structured stations testing a range of practical and knowledge-based skills |
 
-**SAQs demand structure, not flow.** Examiners mark to a mark scheme, not to the quality of prose. Bullet points covering every relevant domain (definition → pathogenesis → morphology → clinical features → complications → prognosis) score better than a paragraph that covers three domains well and misses two entirely.
+**Candidates must pass every section — there is no compensation between sections.** Failing to distinguish across the benign/malignant boundary (or an error of similar magnitude) in 15–25% of cases in *any single section* fails that section and, with it, the exam as a whole, regardless of how strong performance was elsewhere. Note also that, under the current 2021 curriculum, Part 2 Histopathology does **not** assess autopsy practice or gynaecological cytology.
 
-A common SAQ format: *"Describe the histological features of [condition X] and the differential diagnoses you would consider."* The expected answer covers: (1) key architectural features, (2) cytological features, (3) relevant IHC markers, (4) molecular features if applicable, (5) DDx with distinguishing features for each.
+### Section-by-Section Strategy
 
-**Essay / extended response** questions test reporting judgment and clinical integration. These often present a complex case scenario and ask how you would manage it — what ancillary tests, what the report should state, what the MDT implications are. The College publishes examiner reports for recent sittings: reading these is the single most efficient Part 2 preparation step, as they reveal exactly what candidates missed.
+**Long cases and short surgical cases** are the core of the exam and reward the same systematic habit: tissue type → architecture → cellular composition → specific features → differential diagnosis → most likely diagnosis → what further stain or test would help. Do not commit to a diagnosis before completing the systematic description — examiners reward the reasoning trail, not just the final answer.
 
-**Past papers** are available on the RCPath website. Work through them under timed conditions, then review against the published examiner reports. This is the Part 2 equivalent of MCQ bank practice for Part 1.
+**Cytopathology** is scored the same way as the histology sections but on non-gynaecological material — effusions, urine, respiratory, and FNA specimens are the highest-yield categories. Common pitfalls include over-calling reactive mesothelial cells as malignant in effusions and missing high-grade urothelial carcinoma in low-cellularity urine samples.
 
-### Practical OSPE Strategy
+**Macros** tests gross description under time pressure. Practise dictating specimen descriptions — orientation, measurements, cut surfaces, sampling rationale — out loud and timed; a fluent, structured gross description is a practised skill, not a spontaneous one.
 
-The OSPE (Objective Structured Practical Examination) has multiple stations, each timed:
+**Frozen sections** test the ability to give a fast, clinically actionable answer under real time pressure, including knowing when to defer a diagnosis to permanent sections rather than over-call on frozen material.
 
-1. **Slide interpretation** — H&E slides; identify tissue, architecture, diagnosis; common tumours, inflammatory conditions, infections
-2. **Macro grossing station** — describe specimen type, orientation, measurements, cut surfaces; identify key areas to sample and explain sampling rationale
-3. **IHC interpretation** — given a panel result and H&E context, interpret staining and state diagnosis with reasoning
-4. **Ancillary data station** — cytogenetics, molecular results, flow cytometry data; integrate with morphology
-5. **Communication / MDT station** — present a case to a simulated MDT; demonstrate clinical integration and communication of uncertainty
+**OSPE** stations test a mix of practical and applied-knowledge tasks — IHC panel interpretation, ancillary data integration (molecular, cytogenetics), and short structured questions. Know the core diagnostic IHC panels cold: lymphoma phenotyping, carcinoma vs mesothelioma, primary vs metastatic, spindle cell tumour differentiation.
 
 **For every slide:** Use a systematic approach — tissue type → overall architecture → cellular composition → specific pathological features → differential diagnosis → most likely diagnosis → what additional information or stain would help. Do not jump to a diagnosis before completing the systematic description.
 
 **Gross description:** Practise dictating specimen descriptions out loud, timed. The OSPE station has a time limit; a fluent, structured gross description is a practised skill, not a spontaneous one.
 
 **IHC panel interpretation:** Know the core diagnostic panels cold — lymphoma phenotyping, carcinoma vs mesothelioma, primary vs metastatic, spindle cell tumour differentiation. The [FRCPath exam guide at eLearning FRCPath](https://www.elearningfrcpath.com/frcpath-exam-guide) includes IHC panel reference sets specifically structured for OSPE preparation.
+
+**Across every section:** RCPath's published examiner reports for recent sittings are the closest thing to a marking scheme available for Part 2 — reading them is the single most efficient preparation step, as they state explicitly what candidates got wrong or left incomplete. Past cases/mock material worked under strict timed conditions, then reviewed against these reports, is the Part 2 equivalent of MCQ bank practice for Part 1.
 
 ---
 
@@ -194,7 +193,7 @@ The OSPE (Objective Structured Practical Examination) has multiple stations, eac
 
 ## FRCPath Passing Rates and Realistic Expectations
 
-FRCPath Part 1 Histopathology has a first-attempt pass rate of approximately **55–65%** across recent sittings. Part 2 runs higher at around **70–80%**, partly because candidates who reach Part 2 have already demonstrated persistence and preparation discipline through Part 1.
+FRCPath Part 1 Histopathology has a first-attempt pass rate of approximately **55–65%** across recent sittings. Part 2 tends to run higher, partly because candidates who reach Part 2 have already demonstrated persistence and preparation discipline through Part 1 — though because each of the 6 practical sections is marked and passed/failed independently with no compensation between them, a strong overall performance can still be let down by a single weak section.
 
 Most candidates sit Part 1 two to three times before passing — this is normal, documented in published data, and does not reflect poorly on a candidate's career trajectory. What it does reflect: insufficient MCQ volume on first attempt, or undertiming of the paper. The fix is not to know more content — it is to practise more questions under exam conditions.
 
@@ -207,7 +206,7 @@ Most candidates sit Part 1 two to three times before passing — this is normal,
 If you are sitting FRCPath from India, the Middle East, or Southeast Asia:
 
 - **Part 1 can be sat internationally** — the College has approved examination centres in India (multiple cities), the UAE, Singapore, and other locations. Check the RCPath examinations page for the current list of international centres available for each sitting.
-- **Part 2 is typically UK-based** — the written papers and OSPE are conducted in the UK. Plan travel and accommodation well in advance; costs and logistics are significant and are not factored in when candidates compare FRCPath to local examination routes.
+- **Part 2 is typically UK-based** — the entire 2-day practical exam (long cases, short surgical cases, cytopathology, macros, frozen sections, OSPE) is conducted in the UK. Plan travel and accommodation well in advance; costs and logistics are significant and are not factored in when candidates compare FRCPath to local examination routes.
 - **Eligibility:** International candidates without UK GMC registration follow the CESR (Certificate of Eligibility for Specialist Registration) or direct examination route depending on their career stage. Clarify your eligibility category directly with RCPath before applying.
 - **Application timing:** Applications typically open 10–12 weeks before the sitting date. For a sitting in October/November 2026, the application window opens in August 2026. Missing the window means waiting 6 months for the next sitting.
 
@@ -231,11 +230,11 @@ For a full month-by-month dual exam plan covering FRCPath Part 1 Autumn 2026 alo
 
 | Feature | Part 1 | Part 2 |
 |---|---|---|
-| Format | BOF MCQ + EMQ | SAQ + Essays + OSPE |
-| Content emphasis | Core mechanisms, broad systemic pathology | Diagnostic judgment, reporting, MDT integration |
-| Pass rate | ~55–65% first attempt | ~70–80% |
-| Primary preparation tool | MCQ bank (3,000+ questions) | Past papers + examiner reports + slide practice |
-| Image component | Image-based MCQs in paper | OSPE slide stations |
+| Format | SBA + EMQ MCQs, single 3-hour paper | Entirely practical — 6 sections over 2 days (no written papers) |
+| Content emphasis | Core mechanisms, broad systemic pathology | Diagnostic judgment, reporting, hands-on case work |
+| Pass rate | ~55–65% first attempt | Section-by-section pass/fail — no compensation between sections |
+| Primary preparation tool | MCQ bank (3,000+ questions) | Timed mock cases/slides + examiner reports |
+| Image component | Image-based MCQs in paper | Live slides across long cases, short surgical cases, and OSPE stations |
 | IHC knowledge level | Diagnostic markers, common panels | Full panel design, interpretation under uncertainty |
 | Molecular knowledge | WHO 5th Ed classifications, key mutations | Actionable molecular reporting, therapeutic implications |
 | Sitting location | International centres available | Primarily UK |
@@ -250,13 +249,13 @@ For a full month-by-month dual exam plan covering FRCPath Part 1 Autumn 2026 alo
 
 **Pearl 3:** For EMQs, practise reading the option list first without reading the stems. This sounds counterintuitive but activates your recall for all concepts in the question before you encounter the scenarios — it is a faster and more accurate approach than reading each stem cold.
 
-**Pearl 4:** In the OSPE, examiners reward systematic description over a correct guess. Stating a diagnosis before completing a systematic description suggests you pattern-matched rather than assessed. Structure earns marks even when your diagnosis is partially wrong.
+**Pearl 4:** Across the Part 2 practical sections — long cases, short surgical cases, and OSPE alike — examiners reward systematic description over a correct guess. Stating a diagnosis before completing a systematic description suggests you pattern-matched rather than assessed. Structure earns marks even when your diagnosis is partially wrong.
 
 **Mnemonic — PASS for FRCPath exam preparation:**
-- **P** — Practice volume (3,000+ MCQs for Part 1; past papers timed for Part 2)
-- **A** — Active image work (not passive reading about histological features)
+- **P** — Practice volume (3,000+ MCQs for Part 1; timed mock cases across all 6 Part 2 sections)
+- **A** — Active image/slide work (not passive reading about histological features)
 - **S** — Syllabus alignment (WHO 5th Ed, RCPath curriculum — not generic pathology textbooks alone)
-- **S** — Systematic approach (BOF elimination, EMQ option-first, OSPE slide structure)
+- **S** — Systematic approach (SBA elimination and EMQ option-first for Part 1; structured case work-up for Part 2's long cases, short cases, and OSPE stations)
 
 ---
 
@@ -332,11 +331,11 @@ MRCPath (Membership of the Royal College of Pathologists) was the old qualificat
 
 **How does FRCPath Histopathology compare to NEET-SS DM Pathology for an Indian MD Pathology graduate?**
 
-The two qualifications serve different purposes and are not direct competitors. FRCPath is a UK-recognised fellowship that opens pathways to consultant posts in the UK, Commonwealth countries, and internationally. NEET-SS DM Pathology (Oncopathology, Haematopathology, Neuropathology) is the Indian super-specialty route that leads to academic and senior positions within India. Many MD Pathology graduates in India pursue both — using the substantial content overlap (approximately 90% in WHO 5th edition tumour classification, IHC marker panels, and molecular pathology) to prepare for both simultaneously. The key difference is format: FRCPath uses BOF/EMQ and Part 2 written + OSPE; NEET-SS uses a three-section 50-minute-per-section format with digital pathology images.
+The two qualifications serve different purposes and are not direct competitors. FRCPath is a UK-recognised fellowship that opens pathways to consultant posts in the UK, Commonwealth countries, and internationally. NEET-SS DM Pathology (Oncopathology, Haematopathology, Neuropathology) is the Indian super-specialty route that leads to academic and senior positions within India. Many MD Pathology graduates in India pursue both — using the substantial content overlap (approximately 90% in WHO 5th edition tumour classification, IHC marker panels, and molecular pathology) to prepare for both simultaneously. The key difference is format: FRCPath Part 1 uses SBA/EMQ MCQs and Part 2 is entirely practical (long cases, short surgical cases, cytopathology, macros, frozen sections, OSPE — no written papers); NEET-SS uses a three-section 50-minute-per-section format with digital pathology images.
 
 **What is the best single resource for FRCPath Part 1 MCQ practice?**
 
-A dedicated FRCPath-specific MCQ bank is the most efficient resource — general pathology question banks (designed for USMLE or other exams) use different clinical contexts, question styles, and emphasis. The FRCPath BOF style tests specific diagnostic histopathological knowledge, IHC marker application, and WHO classification in a way that USMLE-style pathology MCQs do not. The [FRCPath preparation course at eLearning FRCPath](https://www.elearningfrcpath.com/frcpath-part-1-histopathology-course) is built specifically around the RCPath syllabus and BOF/EMQ format, with image-based questions and timed mock exams matching the actual paper structure.
+A dedicated FRCPath-specific MCQ bank is the most efficient resource — general pathology question banks (designed for USMLE or other exams) use different clinical contexts, question styles, and emphasis. The FRCPath SBA/EMQ style tests specific diagnostic histopathological knowledge, IHC marker application, and WHO classification in a way that USMLE-style pathology MCQs do not. The [FRCPath preparation course at eLearning FRCPath](https://www.elearningfrcpath.com/frcpath-part-1-histopathology-course) is built specifically around the RCPath syllabus and SBA/EMQ format, with image-based questions and timed mock exams matching the actual paper structure.
 
 ---
 
@@ -345,14 +344,14 @@ A dedicated FRCPath-specific MCQ bank is the most efficient resource — general
 - FRCPath Part 1 has a ~55–65% first-attempt pass rate — preparation volume (3,000+ MCQs) matters more than preparation breadth.
 - No negative marking in Part 1 means no question should ever be left blank.
 - EMQs: read the option list before reading the stems — faster and more accurate.
-- Part 2 SAQs are marked on breadth and structure, not prose quality — bullet points covering all domains score better.
+- Part 2 is entirely practical — 6 sections (long cases, short surgical cases, cytopathology, macros, frozen sections, OSPE) over 2 days, each section passed or failed independently with no compensation between them.
 - WHO 5th Edition updates (CNS, soft tissue, haematopathology, GI) are actively tested in current Part 1 papers; pre-2022 notes need updating.
 - Autumn 2026 is the last sitting in the current FRCPath format — Spring 2027 brings a new structure.
 - International candidates can sit Part 1 at approved centres; Part 2 requires travel to the UK.
 
 ---
 
-*Last Updated: June 2026 | Source: RCPath Official Curriculum + Examiner Reports + Candidate Data*
+*Last Updated: August 2026 | Source: RCPath Official Histopathology Examination Regulations 2026 + Examiner Reports + Candidate Data*
 
 Cover image: [Unsplash](https://unsplash.com/photos/person-using-microscope-1532094349884) — Unsplash License (free to use)
 
@@ -363,9 +362,9 @@ Cover image: [Unsplash](https://unsplash.com/photos/person-using-microscope-1532
     {
       "@type": "Article",
       "headline": "FRCPath Exam 2025–2026: Complete Strategy Guide for Part 1 & Part 2",
-      "description": "Complete FRCPath exam guide — eligibility, syllabus, Part 1 MCQ strategy, Part 2 written/practical tips, study resources, and passing rates. Built for international and Indian pathologists.",
+      "description": "Complete FRCPath exam guide — eligibility, syllabus, Part 1 MCQ strategy, Part 2 practical exam (long cases, short cases, cytology, macros, frozen sections, OSPE) strategy, study resources, and passing rates. Built for international and Indian pathologists.",
       "datePublished": "2026-06-05",
-      "dateModified": "2026-06-05",
+      "dateModified": "2026-08-31",
       "author": {
         "@type": "Organization",
         "name": "eLearning FRCPath Team",
@@ -385,7 +384,7 @@ Cover image: [Unsplash](https://unsplash.com/photos/person-using-microscope-1532
         "@id": "https://elearningfrcpath.in/blog/frcpath-exam-strategy-guide-part1-part2/"
       },
       "image": "https://images.unsplash.com/photo-1532094349884-543559c7d254?w=1200",
-      "keywords": ["FRCPath exam strategy 2026", "FRCPath Part 1 MCQ tips", "FRCPath Part 2 OSPE", "how to pass FRCPath", "FRCPath international candidates India", "Royal College of Pathologists histopathology"]
+      "keywords": ["FRCPath exam strategy 2026", "FRCPath Part 1 MCQ tips", "FRCPath Part 2 long cases OSPE", "how to pass FRCPath", "FRCPath international candidates India", "Royal College of Pathologists histopathology"]
     },
     {
       "@type": "FAQPage",
@@ -419,7 +418,7 @@ Cover image: [Unsplash](https://unsplash.com/photos/person-using-microscope-1532
           "name": "How does FRCPath compare to NEET-SS DM Pathology for Indian MD graduates?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "FRCPath opens UK and international consultant pathology positions; NEET-SS DM Pathology leads to super-specialty positions within India. About 70% of content overlaps (WHO 5th edition, IHC panels, molecular pathology). Format differs significantly: FRCPath uses BOF/EMQ and Part 2 OSPE; NEET-SS uses a three-section 50-minute timed format with digital pathology images."
+            "text": "FRCPath opens UK and international consultant pathology positions; NEET-SS DM Pathology leads to super-specialty positions within India. About 90% of content overlaps (WHO 5th edition, IHC panels, molecular pathology). Format differs significantly: FRCPath Part 1 uses SBA/EMQ MCQs and Part 2 is entirely practical (long cases, short surgical cases, cytopathology, macros, frozen sections, OSPE, no written papers); NEET-SS uses a three-section 50-minute timed format with digital pathology images."
           }
         },
         {
@@ -427,7 +426,7 @@ Cover image: [Unsplash](https://unsplash.com/photos/person-using-microscope-1532
           "name": "What is the best resource for FRCPath Part 1 MCQ practice?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A dedicated FRCPath-specific MCQ bank is essential — general pathology banks (USMLE-style) use different clinical contexts and emphasis. The FRCPath BOF format tests diagnostic histopathological knowledge, IHC application, and WHO classification in a specific way. Aim for 3,000+ questions before sitting, with image-based MCQs included."
+            "text": "A dedicated FRCPath-specific MCQ bank is essential — general pathology banks (USMLE-style) use different clinical contexts and emphasis. The FRCPath SBA/EMQ format tests diagnostic histopathological knowledge, IHC application, and WHO classification in a specific way. Aim for 1,200+ questions before sitting, with image-based MCQs included."
           }
         }
       ]
