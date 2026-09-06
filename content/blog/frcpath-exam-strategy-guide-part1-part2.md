@@ -164,7 +164,7 @@ The OSPE (Objective Structured Practical Examination) has multiple stations, eac
 
 **Gross description:** Practise dictating specimen descriptions out loud, timed. The OSPE station has a time limit; a fluent, structured gross description is a practised skill, not a spontaneous one.
 
-**IHC panel interpretation:** Know the core diagnostic panels cold — lymphoma phenotyping, carcinoma vs mesothelioma, primary vs metastatic, spindle cell tumour differentiation. The [FRCPath exam guide at eLearning FRCPath](https://elearningfrcpath.com/frcpath-exam-guide-2026) includes IHC panel reference sets specifically structured for OSPE preparation.
+**IHC panel interpretation:** Know the core diagnostic panels cold — lymphoma phenotyping, carcinoma vs mesothelioma, primary vs metastatic, spindle cell tumour differentiation. The [FRCPath exam guide at eLearning FRCPath](https://www.elearningfrcpath.com/frcpath-exam-guide) includes IHC panel reference sets specifically structured for OSPE preparation.
 
 ---
 
@@ -332,11 +332,11 @@ MRCPath (Membership of the Royal College of Pathologists) was the old qualificat
 
 **How does FRCPath Histopathology compare to NEET-SS DM Pathology for an Indian MD Pathology graduate?**
 
-The two qualifications serve different purposes and are not direct competitors. FRCPath is a UK-recognised fellowship that opens pathways to consultant posts in the UK, Commonwealth countries, and internationally. NEET-SS DM Pathology (Oncopathology, Haematopathology, Neuropathology) is the Indian super-specialty route that leads to academic and senior positions within India. Many MD Pathology graduates in India pursue both — using the substantial content overlap (approximately 70% in WHO 5th edition tumour classification, IHC marker panels, and molecular pathology) to prepare for both simultaneously. The key difference is format: FRCPath uses BOF/EMQ and Part 2 written + OSPE; NEET-SS uses a three-section 50-minute-per-section format with digital pathology images.
+The two qualifications serve different purposes and are not direct competitors. FRCPath is a UK-recognised fellowship that opens pathways to consultant posts in the UK, Commonwealth countries, and internationally. NEET-SS DM Pathology (Oncopathology, Haematopathology, Neuropathology) is the Indian super-specialty route that leads to academic and senior positions within India. Many MD Pathology graduates in India pursue both — using the substantial content overlap (approximately 90% in WHO 5th edition tumour classification, IHC marker panels, and molecular pathology) to prepare for both simultaneously. The key difference is format: FRCPath uses BOF/EMQ and Part 2 written + OSPE; NEET-SS uses a three-section 50-minute-per-section format with digital pathology images.
 
 **What is the best single resource for FRCPath Part 1 MCQ practice?**
 
-A dedicated FRCPath-specific MCQ bank is the most efficient resource — general pathology question banks (designed for USMLE or other exams) use different clinical contexts, question styles, and emphasis. The FRCPath BOF style tests specific diagnostic histopathological knowledge, IHC marker application, and WHO classification in a way that USMLE-style pathology MCQs do not. The [FRCPath Part 1 preparation course at eLearning FRCPath](https://elearningfrcpath.com/frcpath-part-1-histopathology-course) is built specifically around the RCPath syllabus and BOF/EMQ format, with image-based questions and timed mock exams matching the actual paper structure.
+A dedicated FRCPath-specific MCQ bank is the most efficient resource — general pathology question banks (designed for USMLE or other exams) use different clinical contexts, question styles, and emphasis. The FRCPath BOF style tests specific diagnostic histopathological knowledge, IHC marker application, and WHO classification in a way that USMLE-style pathology MCQs do not. The [FRCPath preparation course at eLearning FRCPath](https://www.elearningfrcpath.com/frcpath-part-1-histopathology-course) is built specifically around the RCPath syllabus and BOF/EMQ format, with image-based questions and timed mock exams matching the actual paper structure.
 
 ---
 

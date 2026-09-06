@@ -48,7 +48,7 @@ Here's what that looks like in practice:
 
 For NEET-SS 2026 candidates, this matters because the exam pattern now emphasizes case-based, image-heavy questions that test pattern recognition under time pressure. Generic practice won't cut it. You need targeted exposure to your blind spots, and AI delivers that at scale.
 
-If you're looking for an [AI-driven NEET-SS Pathology prep program](https://elearningfrcpath.com/neet-ss-pathology) that combines adaptive mocks with personalized feedback loops, platforms built on these principles are now the gold standard.
+If you're looking for an [AI-driven NEET-SS Pathology prep program](https://www.elearningfrcpath.com/neet-ss-pathology-2026) that combines adaptive mocks with personalized feedback loops, platforms built on these principles are now the gold standard.
 
 ---
 
@@ -72,7 +72,7 @@ AI-enhanced digital pathology platforms address this by:
 
 **IHC Integration:** Modern exam questions don't just show H&E. They present a case with 4–6 IHC stains and ask you to synthesize. AI platforms now generate multi-stain case banks where you practice the full diagnostic algorithm: H&E → initial DDx → select appropriate IHC panel → interpret results → final diagnosis. This mirrors real-world practice and is exactly what FRCPath Part 2 and NEET-SS Section C test.
 
-For oncopathology and hematopathology—the highest-yield blocks for both NEET-SS and FRCPath—digital pathology practice is non-negotiable. The [digital pathology MCQ bank](https://elearningfrcpath.com/pathology-mcq-2026) approach ensures you're not just memorizing images but building true diagnostic competence.
+For oncopathology and hematopathology—the highest-yield blocks for both NEET-SS and FRCPath—digital pathology practice is non-negotiable. Our [pathology MCQs with answers](https://www.elearningfrcpath.com/pathology-mcq-2026) approach ensures you're not just memorizing images but building true diagnostic competence.
 
 ---
 

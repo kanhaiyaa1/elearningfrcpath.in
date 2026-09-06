@@ -121,7 +121,7 @@ Recognise the pattern and you can handle any variant. The answer structure is al
 
 Speed matters. NEET-SS 2026's 50-minute sectional timer means you have roughly 20 seconds per question — less if you spend time on clinical vignettes. An image MCQ that requires morphology recognition AND clinical correlation cannot take you more than 45–60 seconds total. That pace only comes from drilling image-based questions under timed conditions.
 
-Our [800+ MCQ bank on the platform](https://www.elearningfrcpath.com/frcpath-part-1-mock-tests-online) includes image-based questions specifically structured for NEET-SS sectional timing. Candidates who complete at least 3 full timed image-MCQ sets per week in the final 6 weeks consistently improve their image-section accuracy by 15–20%.
+Our [1200+ MCQ bank on the platform](https://www.elearningfrcpath.com/frcpath-part-1-mock-tests-online) includes image-based questions specifically structured for NEET-SS sectional timing. Candidates who complete at least 3 full timed image-MCQ sets per week in the final 6 weeks consistently improve their image-section accuracy by 15–20%.
 
 ---
 

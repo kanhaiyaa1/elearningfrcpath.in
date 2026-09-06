@@ -120,7 +120,7 @@ You have **50 minutes for 50 questions** — that's 60 seconds per question. In 
 - Mark doubtful questions for review (use the on-screen "Mark for Review" button)
 - Reserve **last 5–7 minutes** for reviewing marked questions within that section
 
-Practice this pacing in your [NEET-SS pathology mock tests](https://elearningfrcpath.com/neet-ss-pathology) so it becomes automatic. Many aspirants lose marks not because they don't know the answer, but because they run out of time to attempt easy questions at the end.
+Practice this pacing in your [NEET-SS pathology mock tests](https://www.elearningfrcpath.com/neet-ss-pathology-2026) so it becomes automatic. Many aspirants lose marks not because they don't know the answer, but because they run out of time to attempt easy questions at the end.
 
 ### Manage Negative Marking Strategically
 
@@ -299,7 +299,7 @@ NEET-SS 2026 uses a **strict sectional format** where once a section is submitte
 
 With negative marking (–1 for wrong, +4 for correct), guessing is only profitable when you can eliminate ≥2 options (probability >50%). The 5 IHC questions where 2 options can be eliminated have a 50% chance of being correct (expected value = 0.5×4 + 0.5×(–1) = +1.5 per question). The 3 factual recalls with zero clue have a 25% chance (expected value = 0.25×4 + 0.75×(–1) = +0.25, but realistically closer to –0.5 due to cognitive bias toward wrong answers under time pressure). Leaving them blank is the safer strategy.
 
-**Exam pearl:** Practise elimination-based guessing in [NEET-SS mock tests](https://elearningfrcpath.com/neet-ss-pathology) to build intuition for when to guess vs. leave blank.
+**Exam pearl:** Practise elimination-based guessing in [NEET-SS mock tests](https://www.elearningfrcpath.com/neet-ss-pathology-2026) to build intuition for when to guess vs. leave blank.
 
 </details>
 
@@ -340,7 +340,7 @@ Most NEET-SS centres allow you to bring your phone to the premises but require y
 - Reserve **5–7 minutes per section** for reviewing marked questions — don't spend 3 minutes on one tough question while leaving easy ones unattempted.
 - **Avoid social media** post-exam; wait for the official answer key and rest.
 
-For a structured approach to NEET-SS 2026 preparation that integrates exam-day logistics with content mastery, explore the [NEET-SS Pathology course](https://elearningfrcpath.com/neet-ss-pathology) and [sectional mock test series](https://elearningfrcpath.com/pathology-mcq-2026).
+For a structured approach to NEET-SS 2026 preparation that integrates exam-day logistics with content mastery, explore the [NEET SS pathology 2026](https://www.elearningfrcpath.com/neet-ss-pathology-2026) guide and [sectional mock test series](https://www.elearningfrcpath.com/pathology-mcq-2026).
 
 ---
 
