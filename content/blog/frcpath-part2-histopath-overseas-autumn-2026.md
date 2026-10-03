@@ -1,12 +1,13 @@
 ---
-title: "FRCPath Part 2 Histopath Now Open Overseas (Autumn 2026): A Game-Changer for Indian Pathologists"
+title: "FRCPath Part 2 Histopathology Overseas Centres: What Indian Pathologists Should Know (2026)"
 date: 2026-06-18
+lastmod: 2026-10-03
 draft: false
 slug: "frcpath-part2-histopath-overseas-autumn-2026"
-description: "FRCPath Part 2 Histopathology exam centres expand internationally from Autumn 2026. Learn how Indian MD Pathology graduates can now plan FRCPath without UK travel. Timeline, NEET-SS dual planning, and realistic career path strategy included."
+description: "RCPath is seeking additional overseas centres for FRCPath Part 2 Histopathology from Autumn 2026. Current overseas options, Part 2 eligibility, timeline and NEET-SS dual planning for Indian pathologists."
 tags: ["FRCPath", "FRCPath Part 2", "Overseas Centres", "NEET-SS", "Exam Strategy", "Career Planning", "Histopathology"]
 categories: ["Exam Updates", "FRCPath Strategy", "Career Development"]
-keywords: ["FRCPath Part 2 overseas centres", "FRCPath Autumn 2026 applications", "FRCPath for Indian pathologists", "MD Pathology to FRCPath", "FRCPath without UK travel"]
+keywords: ["FRCPath Part 2 overseas centres", "FRCPath Autumn 2026 applications", "FRCPath for Indian pathologists", "MD Pathology to FRCPath", "FRCPath Part 2 Dubai Cairo Irbid"]
 author: "eLearning FRCPath Team"
 cover:
   image: "https://images.unsplash.com/photo-1576091160550-112173e7f7cb?w=1200&h=630&fit=crop"
@@ -16,37 +17,39 @@ schema:
   type: "Article"
 ---
 
-For Indian MD Pathology graduates, FRCPath has always felt like a distant goal. The UK-based exam centres, visa logistics, time off work, and cost barriers made it a "maybe later" qualification. But in 2026, something significant shifted.
+> **Update, 3 October 2026:** This post was first written in June 2026 and has been corrected against RCPath's published 2026 regulations and international pages. RCPath is *seeking* additional overseas centres for Part 2 Histopathology from Autumn 2026. The overseas locations its international pages currently list are Irbid (Jordan), Cairo (Egypt) and Dubai (UAE). No India centre has been announced. The application windows and dates quoted below for Autumn 2026 have now passed. Check the RCPath examination calendar for the next sitting.
 
-From Autumn 2026, the Royal College of Pathologists of the United Kingdom (RCPath) is expanding overseas centres for the **FRCPath Part 2 Histopathology exam**, and applications are now open. For many Indian pathologists, this is a watershed moment.
+For Indian MD Pathology graduates, FRCPath has often felt like a distant goal. The UK-based exam centres, visa logistics, time off work, and cost barriers made it a "maybe later" qualification. In 2026, one of those barriers may start to ease.
 
-This isn't just an administrative convenience. It's a structural change that redefines whether FRCPath fits into a realistic India-based career path. Let's unpack what's changing, why it matters, and how you can use it as a real career lever.
+The Royal College of Pathologists of the United Kingdom (RCPath) says it is looking to expand its overseas centres for the **FRCPath Part 2 Histopathology exam** from Autumn 2026, and has invited institutions to apply to host one. That is worth watching, but it is not yet a new set of exam seats you can book.
+
+This post explains what has actually been announced, what has not, and how to plan around it. The planning advice is ours. The facts about centres, eligibility and dates come from RCPath.
 
 ---
 
-## What Changed: The Overseas Expansion
+## What Has Been Announced: The Overseas Expansion
 
-Historically, FRCPath Part 2 Histopathology was predominantly UK-centred. If you wanted to take the exam, you had to:
+Historically, FRCPath Part 2 Histopathology was predominantly UK-centred. If you wanted to take the exam, you often had to:
 
 - Travel to the United Kingdom for the exam date
 - Manage visa applications and timelines
 - Coordinate extended time off from your job or training
 - Bear significant financial costs (travel, accommodation, exam fees)
 
-For Indian pathologists mid-career—whether as DM residents, fellows, or junior consultants—these barriers were often insurmountable. Many simply shelved the idea.
+For Indian pathologists mid-career, whether as DM residents, fellows, or junior consultants, these barriers were often hard to overcome. Many shelved the idea.
 
-**Now, RCPath has announced:**
+**What RCPath has said:**
 
 > "The College is looking to expand its available overseas centres for the Part 2 Histopathology examination from Autumn 2026 and is now accepting applications for that."
 
-In practical terms:
+The applications in that statement come from **institutions that want to host a centre**. They are not applications from candidates. In practical terms:
 
-- From Autumn 2026, there will be exam centres **outside the UK** for Part 2 Histopathology
-- Applications for these overseas seats are **already open**
-- RCPath will announce the specific cities/countries progressively
-- The expansion signals a deliberate policy shift toward global accessibility
+- RCPath is **seeking additional overseas centres** for Part 2 Histopathology from Autumn 2026.
+- RCPath's international pages say Part 2 Histopathology is already delivered in a small number of overseas centres, and that it may be possible to take it in **Irbid (Jordan), Cairo (Egypt) or Dubai (UAE)**. Those are the only three overseas locations we have confirmed.
+- We have found **no announcement of an India centre**, and no list of new cities. Any claim that Part 2 will be available in India, Singapore or elsewhere is speculation until the College publishes it.
+- Part 1 is a separate matter. It is delivered in British Council test centres including New Delhi, as the Autumn 2026 centre list shows.
 
-This is a policy change, not a pilot project. It reflects RCPath's recognition that international candidates represent the future of the specialty.
+The expansion is worth watching, because a nearer centre would lower the travel cost. It does not change the exam, the eligibility rules or the fee.
 
 ---
 
@@ -69,11 +72,11 @@ If you're an MD Pathology from India, you likely fit one of these profiles:
 - Looking for credentials that enhance competitiveness abroad
 - Uncertain whether FRCPath is a prerequisite or a valuable differentiator
 
-The overseas Part 2 expansion directly addresses all three:
+If new overseas centres open, they could help all three:
 
-1. **It makes FRCPath planning realistic** for DM residents without derailing their primary training
-2. **It raises your profile** in India's private sector and multinational diagnostic networks
-3. **It creates a viable stepping stone** for future international mobility
+1. **A nearer centre could make FRCPath planning more realistic** for DM residents, by cutting the travel burden
+2. **The credential itself can raise your profile** in India's private sector and multinational diagnostic networks
+3. **It can be a stepping stone** for future international mobility, though it does not guarantee a post
 
 ---
 
@@ -123,8 +126,8 @@ If you're serious about FRCPath, here's a 2–3 year path you can start now:
 ### Step 1: FRCPath Part 1 (Autumn 2026)
 
 **Timeline for Autumn 2026 Part 1:**
-- Application window: 29 May – 3 July 2026 (UK time) ✓ *Still open*
-- Exam period: 21 Sept – 30 Oct 2026
+- Application window: 29 May – 3 July 2026 (UK time), now closed
+- Part 1 taken: 21–25 Sept 2026, within an exam period running to 30 Oct 2026
 - Results: 20 Nov 2026
 
 **Reality check:** If you're 60–70% ready in core subjects (histopathology, haematopathology, oncopathology), you're ready to apply. Don't wait for "perfect readiness."
@@ -136,27 +139,25 @@ After passing Part 1:
 - Build hands-on experience in histopathology/haematopathology
 - Start Part 2 preparation (alongside your clinical work)
 
-RCPath typically expects **at least 1 year of histopathology training post-Part 1 and being in ST2 level** before Part 2 eligibility. For Indian pathologists, this means 1–2 years of DM/fellowship/junior consultant experience after passing Part 1.
+RCPath's 2026 histopathology regulations set out the training expected. Candidates should normally have at least 1 year of histopathology training and be in ST2 before applying for Part 1, and a further 2 years of histopathology training before applying for Part 2. They should not normally attempt Part 2 until at least 12 months after passing Part 1, and the College anticipates that most trainees will sit Part 2 after 3 years of specialty training. The regulations ask candidates to take guidance from their educational supervisor. Read the current document for the exact wording and how it applies to training outside the UK.
 
-### Step 3: Part 2 Histopathology (Autumn 2026 onwards)
+### Step 3: Part 2 Histopathology
 
-From Autumn 2026:
-- Overseas centres for Part 2 Histopathology are **available now** with applications open
-- You can apply for:
-  - **Autumn 2026** (if you've passed Part 1 and meet eligibility)
-  - **Spring 2027 / Autumn 2027** (if you need more time)
+Part 2 is a practical examination held over 2 days. For Autumn 2026 the College published Part 2 Histopathology dates of 13 and 14 October, with results on 20 November.
 
-**The advantage:** You might complete Part 2 outside the UK, reducing travel cost and logistical burden.
+- Because of the 12-month gap and the training expectation above, a candidate who passes Part 1 in autumn 2026 would not normally sit Part 2 before autumn 2027.
+- Where you can sit it depends on the centres the College lists for that sitting. At present the overseas locations on its international pages are Irbid, Cairo and Dubai, alongside the UK.
+- Check the College's examination calendar for the next application window, which typically closes months before the exam.
 
 | **Milestone** | **Timeline** | **Action** |
 |---|---|---|
-| **FRCPath Part 1 Application** | By 3 July 2026 | Apply (if ready 60–70%) |
-| **Part 1 Exam** | 21 Sept – 30 Oct 2026 | Sit exam |
+| **FRCPath Part 1 Application (Autumn 2026)** | 29 May – 3 July 2026 (closed) | Apply for the next sitting once dates are published |
+| **Part 1 Exam (Autumn 2026)** | Taken 21–25 Sept 2026 | Sit exam |
 | **Part 1 Results** | 20 Nov 2026 | Pass and plan Part 2 |
-| **Clinical Experience Post-Part 1** | 1–2 years | DM/fellowship/consultant role |
-| **Part 2 Application** | From Autumn 2026 | Apply when eligible |
-| **Part 2 Exam** | Autumn 2026–2027 | Sit overseas exam (likely) |
-| **FRCPath Fellowship** | Post-Part 2 Pass | Awarded automatically |
+| **Further training** | Normally at least 12 months after Part 1, with 2 further years of histopathology training | DM, fellowship or consultant role |
+| **Part 2 Application** | Per the College calendar for the target sitting | Apply when eligible and ready |
+| **Part 2 Exam** | UK, or an overseas centre the College lists for that sitting | Confirm the centre before booking travel |
+| **FRCPath Fellowship** | After passing Part 2 and meeting the College's other requirements | Confirm requirements with the College |
 
 ---
 
@@ -181,7 +182,7 @@ Both exams test:
 
 | **Aspect** | **NEET-SS 2026** | **FRCPath Part 1** |
 |---|---|---|
-| **Format** | MCQ (150 Qs, 3.5 hours) | MCQ (100 Qs, 3 hours) |
+| **Format** | MCQ (check the current NBEMS bulletin for the number of questions and duration) | MCQ (125 single-best-answer and extended-matching questions, 3 hours) |
 | **Timing** | Sectional (50 min per section) | Continuous (no sectional break) |
 | **Emphasis** | Image spotters, pattern recognition, PYQs | Clinical scenarios, reasoning, morphology-to-diagnosis logic |
 | **Knowledge Depth** | Broad coverage, high-yield lists | Deeper pathophysiology, differential diagnosis |
@@ -221,12 +222,12 @@ This shared-core approach reduces total study load and makes dual prep realistic
 
 ---
 
-## What to Do This Week (By 24 June 2026)
+## What to Do Now
 
 If you're even remotely considering FRCPath, take these steps:
 
 1. **Check RCPath's official website** for:
-   - Overseas centres confirmed for Part 2 Histopathology Autumn 2026
+   - The current list of overseas centres for Part 2 Histopathology (Irbid, Cairo and Dubai at the time of writing)
    - Exact application deadlines for Part 2
    - Eligibility criteria (postgraduate training requirements)
 
@@ -235,9 +236,9 @@ If you're even remotely considering FRCPath, take these steps:
    - Are you targeting **FRCPath only**?
    - Are you **dual-targeting** (FRCPath + NEET-SS)?
 
-3. **If you haven't applied for Part 1 yet:**
-   - You have until **3 July 2026** to apply for Autumn 2026 Part 1
-   - Don't wait for "perfect readiness"—if you're 60–70% prepared, apply
+3. **If you haven't sat Part 1 yet:**
+   - The Autumn 2026 window closed on **3 July 2026**, so watch the RCPath calendar for the next one
+   - Apply when you are ready and your supervisor agrees, and see our post on [how hard Part 1 is](/blog/how-hard-is-frcpath-part-1/) and [exam fees](/blog/frcpath-exam-fees/)
 
 4. **Start a daily routine:**
    - 10–15 FRCPath-style MCQs (histopathology/haematopathology/oncopathology)
@@ -329,23 +330,23 @@ Choice A (no adjuvant) would be reasonable for very low-risk cases (<2 cm, super
 
 ## Exam Pearls & High-Yield Points
 
-**Pearl 1: Overseas Expansion Eligibility**
-- Part 2 eligibility: You must be in ST2 level (1–2 years postgraduate experience post-Part 1) in a histopathology-equivalent role
-- Part 2 applications: Watch RCPath's website for specific overseas centre dates and application deadlines
+**Pearl 1: Overseas Centres and Eligibility**
+- Part 2 eligibility: normally a further 2 years of histopathology training after the Part 1 entry point, and not until at least 12 months after passing Part 1 (RCPath 2026 histopathology regulations)
+- Overseas centres: RCPath is seeking more. Irbid, Cairo and Dubai are the three currently listed. Watch the College's website for any new centre or date
 
 **Pearl 2: FRCPath vs. NEET-SS Core Differences**
 - **FRCPath emphasizes**: Clinical scenario reasoning, differential diagnosis, international classification systems
 - **NEET-SS emphasizes**: High-yield lists, image spotting, speed, pattern recognition
 
 **Pearl 3: Timeline Reality Check**
-- Part 1 → Part 2 minimum gap: 12 months
-- Part 1 exam to results: ~5–6 weeks
-- Part 2 application window: Usually 6–8 months before exam date
+- Part 1 → Part 2 normal minimum gap: 12 months
+- Autumn 2026 Part 1 exam to results: about 8 weeks (taken 21–25 Sept, results 20 Nov)
+- Application windows close months before the exam, so check the calendar early
 
 **Mnemonic: The "FRCPath Abroad" 3-Step**
-- **F**lex your application (apply Part 1 now—60–70% ready is enough)
-- **R**esist waiting for perfect readiness
-- **C**atch the overseas Part 2 wave (Autumn 2026 onwards)
+- **F**ind the current centre list on rcpath.org
+- **R**ead the 2026 histopathology regulations for eligibility
+- **C**onfirm your centre and dates before booking travel
 
 **Pearl 4: Shared Core Knowledge**
 If dual-targeting NEET-SS and FRCPath:
@@ -359,13 +360,13 @@ If dual-targeting NEET-SS and FRCPath:
 
 **Q: I haven't passed Part 1 yet. Can I apply for Part 2 overseas centres now?**
 
-A: No. You must first pass FRCPath Part 1 and meet the postgraduate training requirement (typically 1 year of ST2-equivalent histopathology experience). However, if you pass Part 1 in November 2026, you would be eligible to apply for Part 2 in Spring 2027 or later, with the overseas centre option available.
+A: No. You must first pass FRCPath Part 1, and RCPath's 2026 histopathology regulations say candidates should not normally attempt Part 2 until at least 12 months after passing Part 1, with a further 2 years of histopathology training expected before applying. A candidate who passes Part 1 in autumn 2026 would therefore not normally sit Part 2 before autumn 2027. Which overseas centres exist at that time depends on what the College lists for that sitting.
 
 ---
 
 **Q: Will overseas Part 2 centres be cheaper than the UK?**
 
-A: Possibly. Exam fees may be similar, but travel and accommodation costs will be significantly lower if the centre is in Asia (likely India, Singapore, or Middle East). However, RCPath has not yet published fee details for overseas centres. Check the official RCPath website once the specific cities are announced.
+A: Possibly, for travel. The 2026 histopathology fee we found is a single figure for Part 2 (£1,576), with no separate overseas rate shown. Travel and accommodation depend on where the centre is. The overseas locations currently listed by RCPath are Irbid, Cairo and Dubai, and no India centre has been announced. See our post on [FRCPath exam fees](/blog/frcpath-exam-fees/) for the full budget.
 
 ---
 
@@ -389,11 +390,11 @@ A: Yes. Passing Part 2 anywhere (UK or overseas) grants you the FRCPath fellowsh
 
 ## Key Takeaways
 
-- **FRCPath Part 2 is now feasible for Indian pathologists** without mandatory UK travel (from Autumn 2026)
-- **This is a 2–3 year path**: Part 1 now (Sept–Oct 2026) → Experience (1–2 years) → Part 2 overseas (Autumn 2026 onwards)
+- **RCPath is seeking additional overseas centres** for Part 2 Histopathology from Autumn 2026. Irbid, Cairo and Dubai are the three currently listed, and no India centre has been announced
+- **This is a multi-year path**: Part 1, then normally at least 12 months and about 3 years of specialty training in total before Part 2 (RCPath 2026 histopathology regulations)
 - **Dual-targeting NEET-SS + FRCPath is realistic** if you use a shared-core knowledge base and layer exam-specific skills
 - **FRCPath adds real value** in India's competitive pathology market, especially for multinational roles and future international mobility
-- **Don't wait for perfect readiness**: If you're 60–70% prepared in core subjects, apply for Part 1 now (deadline 3 July 2026)
+- **Plan from the calendar**: The Autumn 2026 Part 1 window closed on 3 July 2026, so watch RCPath for the next one
 - **Start now**: 10–15 MCQs/day + 10–15 images/day + error notebook = a sustainable, non-burnout routine
 
 For structured guidance on FRCPath preparation combined with NEET-SS strategy, explore [FRCPath Part 1 histopathology courses](https://elearningfrcpath.com/frcpath-part-1-histopathology-course) and [NEET-SS pathology resources](https://elearningfrcpath.com/neet-ss-pathology) designed to align both exams efficiently.
@@ -406,90 +407,101 @@ Cover image: [Laboratory microscopy and pathology analysis](https://images.unspl
 
 ---
 
-```json
+
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "FRCPath Part 2 Histopath Now Open Overseas (Autumn 2026): A Game-Changer for Indian Pathologists",
-  "description": "FRCPath Part 2 Histopathology exam centres expand internationally from Autumn 2026. Learn how Indian MD Pathology graduates can now plan FRCPath without UK travel.",
-  "image": "https://images.unsplash.com/photo-1576091160550-112173e7f7cb?w=1200&h=630&fit=crop",
-  "author": {
-    "@type": "Organization",
-    "name": "eLearning FRCPath Team"
-  },
-  "datePublished": "2026-06-18",
-  "dateModified": "2026-06-18",
-  "mainEntity": {
-    "@type": "Article",
-    "articleBody": "FRCPath Part 2 Histopathology exam centres are now being expanded internationally from Autumn 2026..."
-  },
-  "faqPage": {
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "I haven't passed Part 1 yet. Can I apply for Part 2 overseas centres now?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. You must first pass FRCPath Part 1 and meet the postgraduate training requirement (typically 1 year of ST2-equivalent histopathology experience)."
-        }
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "FRCPath Part 2 Histopathology Overseas Centres: What Indian Pathologists Should Know (2026)",
+      "description": "RCPath is seeking additional overseas centres for FRCPath Part 2 Histopathology from Autumn 2026. Current overseas options, Part 2 eligibility, timeline and NEET-SS dual planning for Indian pathologists.",
+      "image": "https://images.unsplash.com/photo-1576091160550-112173e7f7cb?w=1200&h=630&fit=crop",
+      "author": {
+        "@type": "Organization",
+        "name": "eLearning FRCPath Team",
+        "url": "https://elearningfrcpath.in"
       },
-      {
-        "@type": "Question",
-        "name": "Will overseas Part 2 centres be cheaper than the UK?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Possibly. Travel and accommodation costs will be significantly lower if the centre is in Asia. However, exam fees may be similar."
-        }
+      "publisher": {
+        "@type": "Organization",
+        "name": "eLearning FRCPath",
+        "url": "https://elearningfrcpath.in"
       },
-      {
-        "@type": "Question",
-        "name": "Can I prepare for FRCPath and NEET-SS simultaneously without burnout?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, if you use a shared-core strategy. Both exams test the same foundational knowledge."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is FRCPath recognized in India for job applications?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Increasingly, yes. Multinational diagnostic chains and premium private hospitals recognize FRCPath as a marker of international-standard training."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "If I take Part 2 overseas, do I still get the FRCPath title awarded?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Passing Part 2 anywhere (UK or overseas) grants you the FRCPath fellowship."
-        }
+      "datePublished": "2026-06-18",
+      "dateModified": "2026-10-03",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://elearningfrcpath.in/blog/frcpath-part2-histopath-overseas-autumn-2026/"
       }
-    ]
-  },
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://elearningfrcpath.in"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://elearningfrcpath.in/blog"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "FRCPath Part 2 Histopath Now Open Overseas (Autumn 2026)",
-        "item": "https://elearningfrcpath.in/blog/frcpath-part2-histopath-overseas-autumn-2026"
-      }
-    ]
-  }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "I haven't passed Part 1 yet. Can I apply for Part 2 overseas centres now?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. You must first pass FRCPath Part 1, and RCPath's 2026 histopathology regulations say candidates should not normally attempt Part 2 until at least 12 months after passing Part 1, with a further 2 years of histopathology training expected before applying. A candidate who passes Part 1 in autumn 2026 would not normally sit Part 2 before autumn 2027."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will overseas Part 2 centres be cheaper than the UK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Possibly, for travel. The 2026 histopathology fee we found is a single figure for Part 2 (£1,576), with no separate overseas rate shown. The overseas locations currently listed by RCPath are Irbid, Cairo and Dubai, and no India centre has been announced."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I prepare for FRCPath and NEET-SS simultaneously without burnout?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, if you use a shared-core strategy. Both exams test foundational histopathology, haematopathology, oncopathology and IHC knowledge. The difference is style, so layer exam-specific practice on top of a shared core."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is FRCPath recognized in India for job applications?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Increasingly, yes. Multinational diagnostic chains and premium private hospitals recognize FRCPath as a marker of international-standard training. It is not a requirement, and it does not guarantee a post."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "If I take Part 2 overseas, do I still get the FRCPath title awarded?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Passing Part 2 and meeting the College's other requirements leads to the Fellowship. Confirm the exact requirements with the College, and check which overseas centres it lists for your sitting."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://elearningfrcpath.in/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://elearningfrcpath.in/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "FRCPath Part 2 Histopathology Overseas Centres: What Indian Pathologists Should Know (2026)",
+          "item": "https://elearningfrcpath.in/blog/frcpath-part2-histopath-overseas-autumn-2026/"
+        }
+      ]
+    }
+  ]
 }
-```
+</script>

@@ -74,7 +74,7 @@ If you also plan FRCPath, use one resource list for common content and keep time
 
 ### Format and eligibility
 
-RCPath describes histopathology Part 1 as 125 multiple-choice questions, a mixture of one-best-answer and extended-matching formats, in 3 hours. From Autumn 2026 it is taken on a computer in British Council test centres, with content and pass standard unchanged. Eligibility, as reported in 2024, required a medical degree, at least one year of specialty training and supervisor confirmation, so most Indian candidates become eligible after the first year of MD. Confirm the current regulations before you apply.
+RCPath describes histopathology Part 1 as 125 multiple-choice questions, a mixture of one-best-answer and extended-matching formats, in 3 hours. From Autumn 2026 it is taken on a computer in British Council test centres, with content and pass standard unchanged. On eligibility, RCPath's 2026 histopathology regulations say candidates should normally have at least 1 year of histopathology training and be in ST2 before applying for Part 1, and should take guidance from their educational supervisor on when to sit. How the College views your Indian training is its decision, so confirm it with RCPath before you plan around a particular year.
 
 ### Windows and dates
 
@@ -100,7 +100,7 @@ Part 2 histopathology is a practical examination with six components over two da
 
 The 2026 Part 2 fee is £1,576. For Autumn 2026 the College published Part 2 histopathology dates of 13 and 14 October. Part 2 is held in the UK and in a small number of overseas centres, which the College's international pages list as Irbid, Cairo and Dubai, and the College has invited more centres to apply to host Part 2 from Autumn 2026. We found no announcement of an India centre. Our earlier post on [overseas Part 2 centres](/blog/frcpath-part2-histopath-overseas-autumn-2026/) discusses what the expansion could mean for Indian candidates, and you should check the College's current centre list before you commit to travel plans.
 
-Eligibility and the training required before Part 2 are set in the College regulations. Confirm them in the current document for your sitting and plan to be ready after enough supervised reporting experience, not just after passing Part 1.
+The 2026 histopathology regulations expect a further 2 years of histopathology training before applying for Part 2, and say candidates should not normally attempt it until at least 12 months after passing Part 1. The College anticipates that most trainees sit Part 2 after 3 years of specialty training. Plan for enough supervised reporting experience, not just a pass in Part 1, and confirm how the College treats your training.
 
 ---
 

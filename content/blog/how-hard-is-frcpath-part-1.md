@@ -30,7 +30,7 @@ That is about 86 seconds per question, which is the first source of difficulty. 
 
 From the Autumn 2026 sitting, the exam is delivered on a computer through the Risr platform in British Council test centres. The College states that the syllabus, blueprint, format, number of questions, standard-setting process and pass standard are unchanged. Only the delivery has changed. The Autumn 2026 international centres included New Delhi, Karachi, Amman, Singapore, Colombo and Yangon. If you have only practised from books, spend some of your preparation on screen, where you can click an image to enlarge it and flag questions to return to later.
 
-Eligibility, as reported in 2024, required a medical degree, at least one year of specialty training and educational supervisor confirmation. Check the current regulations, because eligibility wording can be updated.
+On eligibility, RCPath's 2026 histopathology regulations say candidates should normally have at least 1 year of histopathology training and be in ST2 before applying for Part 1, and should take guidance from their educational supervisor on when to sit. Check the current regulations, because the wording can be updated.
 
 ---
 
@@ -40,7 +40,7 @@ The College publishes examination performance reports after each sitting. Accord
 
 We do not quote a specific pass rate in this post, because we could not verify one from the reports. Candidate reports on forums and in training groups often suggest that roughly 50 to 60 percent pass at the first attempt. Treat that as anecdotal. It varies by diet, it is not an official statistic, and it may differ for UK trainees and overseas candidates, which is exactly the split the College reports show.
 
-One official rule is useful for planning. RCPath policy allows four attempts at each part of the FRCPath examinations. A candidate who has failed on four occasions cannot re-enter unless Council grants permission. That is a ceiling on attempts, and it also means each failed sitting is both a delay and an extra fee. Our post on [FRCPath exam fees](/blog/frcpath-exam-fees/) lays out what a repeat sitting costs.
+One official rule is useful for planning. RCPath's 2026 regulations say candidates are normally permitted four attempts at each of Part 1 and Part 2, with additional attempts only in exceptional circumstances and with the permission of Council. That is a ceiling on attempts, and it also means each failed sitting is both a delay and an extra fee. Our post on [FRCPath exam fees](/blog/frcpath-exam-fees/) lays out what a repeat sitting costs.
 
 ---
 
@@ -123,7 +123,7 @@ The two exams test different things. FRCPath Part 1 is a single three-hour paper
 - Part 1 has 125 questions in 3 hours, so speed on common material matters.
 - Delivery moved to computer in British Council centres from Autumn 2026, and content did not change.
 - The College publishes performance reports by specialty, centre type and attempt.
-- Four attempts per part is the standard limit before Council permission is required.
+- Four attempts per part is the normal limit, and extra attempts need Council permission.
 
 ---
 
@@ -195,7 +195,7 @@ The College describes Part 1 as 125 multiple-choice questions, mixing one-best-a
 
 **How many attempts do I get at Part 1?**
 
-RCPath policy allows four attempts at each part of the FRCPath examinations. A candidate who has failed on four occasions is not permitted to re-enter unless Council grants permission. Because each sitting carries its own fee, repeat attempts also add cost, so plan to be ready at the first or second sitting.
+RCPath's 2026 regulations say candidates are normally permitted four attempts at each of Part 1 and Part 2, with additional attempts only in exceptional circumstances and with the permission of Council. Because each sitting carries its own fee, repeat attempts also add cost, so plan to be ready at the first or second sitting.
 
 **How long should I prepare for FRCPath Part 1?**
 
@@ -209,7 +209,7 @@ For a candidate already working in histopathology, three to four months of struc
 - The exam moved to British Council test centres from Autumn 2026, with content, standard setting and pass standard unchanged.
 - The College publishes performance reports by specialty, centre type and attempt. Use them instead of guesses for pass rates.
 - Failure usually traces to limited timed practice, weak breadth, outdated classification and neglected images.
-- Four attempts per part is the limit before Council permission is needed.
+- Four attempts per part is the normal limit, and extra attempts need Council permission.
 - A four-month plan with a timed on-screen final month suits most working candidates.
 
 *Last verified against RCPath publications: 3 October 2026. Confirm format and regulations on rcpath.org before you apply.*
@@ -281,7 +281,7 @@ Cover image: [Unsplash](https://unsplash.com/photos/1581093458791) — Unsplash 
           "name": "How many attempts do I get at Part 1?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "RCPath policy allows four attempts at each part of the FRCPath examinations. A candidate who has failed on four occasions cannot re-enter unless Council grants permission. Each sitting carries its own fee, so repeat attempts also add cost."
+            "text": "RCPath's 2026 regulations say candidates are normally permitted four attempts at each of Part 1 and Part 2, with additional attempts only in exceptional circumstances and with the permission of Council. Each sitting carries its own fee, so repeat attempts also add cost."
           }
         },
         {

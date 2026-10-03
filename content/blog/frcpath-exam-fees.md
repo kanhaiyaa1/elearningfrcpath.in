@@ -70,7 +70,7 @@ For the Autumn 2026 sitting the College published Part 2 histopathology dates of
 
 Candidates apply and pay through the RCPath online application system during a fixed window. For Autumn 2026 that window ran from 29 May to 3 July, with a withdrawal deadline of 17 July and entry confirmation on 31 July. For Spring 2026 the window ran from 28 November 2025 to 2 January 2026. Dates for Spring 2027 had not been published when we checked, but the spring pattern suggests an application period around the turn of the year. Watch the College's examination calendar.
 
-On refunds, the Autumn 2026 Part 1 guidance states that a candidate can withdraw before the published deadline and receive a refund, but the application cannot be transferred to the next sitting, so you must reapply. Withdrawals after the deadline are refunded only in exceptional circumstances. Do not assume a fee is refundable once the deadline has passed.
+On refunds, RCPath's 2026 regulations say that a candidate who withdraws up to 2 weeks after the closing date may have the fee refunded, and that a candidate who withdraws later forfeits the entire fee. A documented adverse circumstance such as illness is handled separately. For Autumn 2026, with applications closing on 3 July, the published withdrawal deadline of 17 July matched that rule. The Autumn 2026 Part 1 guidance also says the application cannot be transferred to the next sitting, so you must reapply. Do not assume a fee is refundable once the 2-week period has passed.
 
 ---
 
@@ -113,7 +113,7 @@ In India, the Fellowship is a credential that sits alongside an MD or DM. Many c
 
 - The fee is per sitting, so preparation quality is the cheapest way to control cost.
 - Fees change every year. Do not copy last year's number into this year's budget.
-- RCPath allows four attempts at each part before permission from Council is needed for another, so a repeated sitting adds a full fee.
+- RCPath's 2026 regulations say candidates are normally permitted four attempts at each of Part 1 and Part 2, so a repeated sitting adds a further fee.
 - Part 1 content is unchanged by the move to British Council test centres. Practise on a screen, not on paper.
 
 For a wider view of how the two parts fit together, read the [FRCPath Part 1 and Part 2 strategy guide](/blog/frcpath-exam-strategy-guide-part1-part2/) and the [official exam guide](https://elearningfrcpath.com/frcpath-exam-guide-2026) on our course site.
@@ -190,7 +190,7 @@ For Autumn 2026, Part 1 was offered at British Council test centres including Ne
 
 **Can I get a refund if I withdraw from the exam?**
 
-For Autumn 2026, RCPath said candidates could withdraw before the published deadline of 17 July and receive a refund, but the application could not be moved to the next sitting. After the deadline, refunds apply only in exceptional circumstances. Because deadlines differ each sitting, read the guidance for the diet you are entering and email the Examinations team promptly if your plans change.
+RCPath's 2026 regulations say a candidate who withdraws up to 2 weeks after the closing date may have the fee refunded, and a candidate who withdraws later forfeits the entire fee, apart from documented adverse circumstances such as illness. For Autumn 2026 the application could not be moved to the next sitting. Closing dates differ each sitting, so read the guidance for the diet you are entering and email the Examinations team promptly if your plans change.
 
 **Does FRCPath reimburse exam fees for doctors in India?**
 
@@ -205,7 +205,7 @@ No. The reimbursement announced in July 2026 covers resident doctors and locally
 - Part 1 is now a computer-based exam in British Council test centres, with New Delhi among the Autumn 2026 centres.
 - Part 2 is held in the UK and in a few overseas centres, and the College is expanding the overseas list. No India centre had been announced when we checked.
 - Travel, study resources and time away from work often exceed the fee, so budget each group separately.
-- Withdraw before the published deadline if you need a refund, and confirm all figures on rcpath.org before paying.
+- Withdraw within 2 weeks of the closing date if you need a refund, and confirm all figures on rcpath.org before paying.
 
 *Last verified against RCPath and BMA publications: 3 October 2026. Fees and dates change, so confirm them with the College before you apply.*
 
@@ -276,7 +276,7 @@ Cover image: [Unsplash](https://unsplash.com/photos/1606761568499) — Unsplash 
           "name": "Can I get a refund if I withdraw from the exam?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For Autumn 2026, RCPath said candidates could withdraw before the published deadline and receive a refund, but the application could not be moved to the next sitting. After the deadline, refunds apply only in exceptional circumstances. Read the guidance for the diet you are entering."
+            "text": "RCPath's 2026 regulations say a candidate who withdraws up to 2 weeks after the closing date may have the fee refunded, and a candidate who withdraws later forfeits the entire fee, apart from documented adverse circumstances such as illness. Read the guidance for the diet you are entering."
           }
         },
         {
