@@ -2,13 +2,14 @@ baseURL = "https://elearningfrcpath.in/"
 languageCode = "en-us"
 title = "eLearning FRCPath | NEET SS Pathology & FRCPath Preparation"
 theme = "PaperMod"
-paginate = 10
-enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
 buildExpired = false
 enableEmoji = true
 pygmentsUseClasses = true
+
+[pagination]
+  pagerSize = 10
 
 [minify]
   disableXML = true
@@ -29,7 +30,7 @@ pygmentsUseClasses = true
   keywords = ["FRCPath", "NEET SS Pathology", "Histopathology", "Oncopathology", "Pathology MCQ", "Medical exam preparation"]
   author = "eLearning FRCPath Team"
   images = ["/images/og-default.png"]
-  DateFormat = "January 2, 2026"
+  DateFormat = "January 2, 2006"
   defaultTheme = "auto"
   disableThemeToggle = false
   ShowReadingTime = true
@@ -51,14 +52,13 @@ pygmentsUseClasses = true
 
   [params.assets]
     favicon = "/favicon.ico"
-    favicon16x16 = "/favicon-16x16.png"
-    favicon32x32 = "/favicon-32x32.png"
-    apple_touch_icon = "/apple-touch-icon.png"
-    safari_pinned_tab = "/safari-pinned-tab.svg"
+    favicon16x16 = "/images/favicon-16x16.png"
+    favicon32x32 = "/images/favicon-32x32.png"
+    apple_touch_icon = "/images/apple-touch-icon.png"
 
   [params.label]
     text = "eLearning FRCPath"
-    icon = "/apple-touch-icon.png"
+    icon = "/images/apple-touch-icon.png"
     iconHeight = 35
 
   [params.profileMode]
@@ -70,11 +70,11 @@ pygmentsUseClasses = true
 
   [[params.socialIcons]]
     name = "email"
-    url = "mailto:contact@elearningfrcpath.com"
+    url = "mailto:info@elearningfrcpath.in"
 
   [[params.socialIcons]]
     name = "twitter"
-    url = "https://twitter.com/eaborningfrcpath"
+    url = "https://twitter.com/elearningf8199"
 
   [[params.socialIcons]]
     name = "youtube"

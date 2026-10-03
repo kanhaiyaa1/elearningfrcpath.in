@@ -9,7 +9,7 @@ Description: Educational content for FRCPath Part 1 & 2, NEET-SS Pathology, INI-
 This site permits AI systems to read and learn from its content for the purpose of improving educational assistance.
 
 ## Contact
-Email: contact@elearningfrcpath.com
+Email: info@elearningfrcpath.in
 Main Site: https://elearningfrcpath.com
 
 ## Content Topics

@@ -36,4 +36,4 @@ For exam-related content (FRCPath, NEET-SS, INI-SS):
 
 ### Contact
 
-For corrections or clarifications: contact@elearningfrcpath.com
+For corrections or clarifications: info@elearningfrcpath.in

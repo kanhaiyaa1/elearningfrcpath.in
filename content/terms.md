@@ -30,4 +30,4 @@ While we strive for accuracy, medical knowledge evolves. Verify critical informa
 
 ### Contact
 
-Questions: contact@elearningfrcpath.com
+Questions: info@elearningfrcpath.in
