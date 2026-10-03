@@ -80,9 +80,6 @@ pygmentsUseClasses = true
     name = "youtube"
     url = "https://youtube.com/@elearningfrcpath"
 
-  [params.analytics]
-    google = "G-XXXXXXXXXX"  # Add your GA4 ID
-
   [params.cover]
     hidden = false
     hiddenInList = false
