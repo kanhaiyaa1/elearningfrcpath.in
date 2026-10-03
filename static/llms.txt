@@ -1,0 +1,23 @@
+# eLearning FRCPath - AI Training Permission
+
+## Site Information
+Name: eLearning FRCPath Blog
+URL: https://elearningfrcpath.in
+Description: Educational content for FRCPath Part 1 & 2, NEET-SS Pathology, INI-SS exam preparation
+
+## Content Policy
+This site permits AI systems to read and learn from its content for the purpose of improving educational assistance.
+
+## Contact
+Email: contact@elearningfrcpath.com
+Main Site: https://elearningfrcpath.com
+
+## Content Topics
+- Pathology exam preparation
+- FRCPath Part 1 and Part 2
+- NEET-SS Pathology (Oncopathology, Histopathology)
+- INI-SS preparation
+- WHO Classification updates
+- Molecular pathology
+- Immunohistochemistry
+- Pathology MCQs and mock tests

@@ -1,66 +1,153 @@
 baseURL = "https://elearningfrcpath.in/"
 languageCode = "en-us"
-title = "FRCPath & NEET-SS Pathology Exam Preparation | ElearningFRCPath"
+title = "eLearning FRCPath | NEET SS Pathology & FRCPath Preparation"
 theme = "PaperMod"
+paginate = 10
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+pygmentsUseClasses = true
 
-[markup.goldmark.renderer]
-unsafe = true
-
-[params]
-description = "India's most comprehensive online preparation platform for FRCPath Part 1, NEET-SS Pathology, and INI-SS. Expert faculty, 5000+ MCQs, WHO 5th Edition updated content."
-author = "ElearningFRCPath"
-showReadingTime = true
-showShareButtons = true
-keywords = ["FRCPath preparation", "NEET-SS pathology", "pathology MCQ", "histopathology course", "INI-SS pathology", "FRCPath Part 1", "pathology exam preparation"]
-images = ["/images/og-cover.png"]
-
-[params.assets]
-favicon          = "/favicon.ico"
-favicon16x16     = "/favicon.ico"
-favicon32x32     = "/favicon.ico"
-apple_touch_icon = "/favicon.ico"
-
-[[params.socialIcons]]
-name = "email"
-url = "mailto:info@elearningfrcpath.in"
-
-[menu]
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-[[menu.main]]
-name = "About"
-url = "/about/"
-weight = 2
-[[menu.main]]
-name = "Courses"
-url = "/courses/"
-weight = 3
-[[menu.main]]
-name = "Teachers"
-url = "/teachers/"
-weight = 4
-[[menu.main]]
-name = "Blog"
-url = "/blog/"
-weight = 5
-[[menu.main]]
-name = "FAQs"
-url = "/faqs/"
-weight = 6
-[[menu.main]]
-name = "Reviews"
-url = "/reviews/"
-weight = 7
-[[menu.main]]
-name = "Contact"
-url = "/contact/"
-weight = 8
+[minify]
+  disableXML = true
+  minifyOutput = true
 
 [outputs]
-home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON"]
 
 [sitemap]
-changefreq = "daily"
-priority = 0.5
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[params]
+  env = "production"
+  title = "eLearning FRCPath"
+  description = "Expert-led preparation for FRCPath Part 1 & 2, NEET-SS Pathology, INI-SS. MCQs, mock tests, video lectures, and high-yield notes by UK-qualified pathologists."
+  keywords = ["FRCPath", "NEET SS Pathology", "Histopathology", "Oncopathology", "Pathology MCQ", "Medical exam preparation"]
+  author = "eLearning FRCPath Team"
+  images = ["/images/og-default.png"]
+  DateFormat = "January 2, 2026"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = true
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecialCharacterReplacement = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+  mainSections = ["blog"]
+
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+    safari_pinned_tab = "/safari-pinned-tab.svg"
+
+  [params.label]
+    text = "eLearning FRCPath"
+    icon = "/apple-touch-icon.png"
+    iconHeight = 35
+
+  [params.profileMode]
+    enabled = false
+
+  [params.homeInfoParams]
+    Title = "FRCPath & NEET SS Pathology Preparation"
+    Content = "Daily high-yield updates, exam strategies, and expert insights for pathology exam success."
+
+  [[params.socialIcons]]
+    name = "email"
+    url = "mailto:contact@elearningfrcpath.com"
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/eaborningfrcpath"
+
+  [[params.socialIcons]]
+    name = "youtube"
+    url = "https://youtube.com/@elearningfrcpath"
+
+  [params.analytics]
+    google = "G-XXXXXXXXXX"  # Add your GA4 ID
+
+  [params.cover]
+    hidden = false
+    hiddenInList = false
+    hiddenInSingle = false
+    responsiveImages = true
+
+  [params.editPost]
+    URL = "https://github.com/kanhaiyaa1/elearningfrcpath.in/tree/main/content"
+    Text = "Suggest Changes"
+    appendFilePath = true
+
+  [params.fuseOpts]
+    isCaseSensitive = false
+    shouldSort = true
+    location = 0
+    distance = 1000
+    threshold = 0.4
+    minMatchCharLength = 0
+    keys = ["title", "permalink", "summary", "content"]
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+  [[menu.main]]
+    identifier = "courses"
+    name = "Courses"
+    url = "https://elearningfrcpath.com/"
+    weight = 4
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 5
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 6
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    noClasses = false
+    style = "monokai"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,65 @@
+<!-- Canonical URL -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Open Graph -->
+<meta property="og:site_name" content="eLearning FRCPath">
+<meta property="og:locale" content="en_US">
+{{ if .Params.cover.image }}
+<meta property="og:image" content="{{ .Params.cover.image }}">
+{{ else }}
+<meta property="og:image" content="{{ .Site.BaseURL }}images/og-default.png">
+{{ end }}
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@elearningfrcpath">
+{{ if .Params.cover.image }}
+<meta name="twitter:image" content="{{ .Params.cover.image }}">
+{{ end }}
+
+<!-- IndexNow -->
+<meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE">
+
+<!-- Local Business Schema (for organization) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "eLearning FRCPath",
+  "url": "https://elearningfrcpath.com",
+  "logo": "https://elearningfrcpath.in/images/logo.png",
+  "description": "Expert-led pathology exam preparation for FRCPath, NEET-SS, and INI-SS",
+  "sameAs": [
+    "https://twitter.com/elearningfrcpath",
+    "https://youtube.com/@elearningfrcpath"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "contact@elearningfrcpath.com",
+    "contactType": "customer support",
+    "url": "https://elearningfrcpath.com/contact"
+  }
+}
+</script>
+
+<!-- WebSite Schema with SearchAction -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "eLearning FRCPath Blog",
+  "url": "https://elearningfrcpath.in",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://elearningfrcpath.in/search/?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://www.google-analytics.com">
+
+<!-- DNS Prefetch -->
+<link rel="dns-prefetch" href="https://elearningfrcpath.com">
